@@ -1,0 +1,143 @@
+/* MAIN BOH CSS */
+
+body {
+	background: url('http://becauseofhope.org/images/background-dark.png') ;
+	background-attachment: fixed;
+	background-position: top center;
+	background-repeat: repeat;
+}
+
+a img {
+	border: none;
+}
+
+h3 {
+	font-size: 19px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-align: left;
+	font-family: Arial, sans-serif;
+	line-height: .1;
+}
+
+#wrapper {
+	width: 990px;
+	margin: 0 auto;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#wrapper #top {
+	margin-top: 40px;
+	height: 25px;
+	text-align: right;
+	font-family: Arial, sans-serif;
+}
+
+	#wrapper #top img {
+		opacity: 0.8;
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+
+#wrapper #logo {
+	float: left;
+	width: 140px;
+	height: 68px;
+	margin-top: 0px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+#wrapper #nav {
+	float: right;
+	width: 760px;
+	color: #c0b7b2;
+	margin-top: 50px;
+	margin-right: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	text-align: right;
+	font-weight: 100;
+	letter-spacing: 2px;
+}
+
+#wrapper #nav a {
+	color: #c0b7b2;
+	font-weight: 100;
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+
+#wrapper #nav a:hover {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #5a3a51;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+#wrapper #line {
+	clear: both;
+	width: 980px;
+	padding: 2px;
+	background-color: #c0b7b2;
+}
+
+#wrapper #content {
+	float: left;
+	background-color: #000000;
+	opacity: 0.9;
+	width: 690px;
+	height: 100%;
+	margin-top: 15px;
+	margin-left: 20px;
+	margin-right: 5px;
+	margin-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: left;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	font-size: 18px;
+	font-weight: lighter;
+	color: #ffffff;
+}
+
+#wrapper #side {
+	float: right;
+	background-color: #000000;
+	opacity: 0.9;
+	width: 200px;
+	height: 560px;
+	margin-top: 15px;
+	margin-left: 5px;
+	margin-right: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-align: justify;
+	font-family: Arial, sans-serif;
+	font-style: normal;
+	font-size: 14px;
+	font-weight: lighter;
+	color: #c0b7b2;
+}
+
+#wrapper #footer {
+	clear: both;
+	width: 980px;
+	opacity: 0.4;
+	color: #bfb7b1;
+	text-align: right;
+	font-family: Arial, sans-serif;
+	font-style: italic;
+	font-size: 15px;
+	font-weight: lighter;
+	letter-spacing: 3px;
+}
