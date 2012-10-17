@@ -232,7 +232,19 @@
                         <input type="image" src="images/button_general_onetime.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                     </form>
 
-                    <img src="images/button_general_reoccur.png"/>
+                    <form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_xclick-subscriptions">
+                        <input type="hidden" name="business" value="sales@becauseofhope.org">
+                        <input type="hidden" name="item_name" value="BOH: Recurring Donation">
+                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="hidden" name="no_shipping" value="1">
+                        <input class="amount" type="text" placeholder="monthly amount" name="a3" autocomplete="off" >
+                        <input type="image" src="images/button_general_reoccur.png" border="0" name="submit" >
+                        <input type="hidden" name="p3" value="1">
+                        <input type="hidden" name="t3" value="M">
+                        <input type="hidden" name="src" value="1">
+                        <input type="hidden" name="sra" value="1">
+                    </form>
                 </div>
                 <div class="hero-text">
                     <p>
@@ -256,13 +268,14 @@
                 <div class="hero-pictures">
                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
                         <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="ZXTBLZGYBDNLW">
+                        <input type="hidden" name="hosted_button_id" value="2L7QSYZJ3QCUG">
                         <input type="image" src="images/button_student_onetime.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                     </form>
 
                     <form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                         <input type="hidden" name="cmd" value="_xclick-subscriptions">
                         <input type="hidden" name="business" value="sales@becauseofhope.org">
+                        <input type="hidden" name="item_name" value="BOH: Recurring Student Scholarship Donation">
                         <input type="hidden" name="currency_code" value="USD">
                         <input type="hidden" name="no_shipping" value="1">
                         <input class="amount" type="text" placeholder="monthly amount" name="a3" autocomplete="off" >
