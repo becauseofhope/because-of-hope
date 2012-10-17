@@ -37,6 +37,10 @@ route '/assets/stylesheets/*/' do
     item.identifier.chop + '.css'
 end
 
+route '/assets/javascript/' do
+    item.identifier.hop + '.js'
+end
+
 
 # Site Content Stuff
 
