@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'compass'
+require 'zurb-foundation'
 
 # A few helpful tips about the Rules file:
 #
@@ -17,6 +18,9 @@ require 'compass'
 
 Compass.add_project_configuration 'compass/config.rb' # when using Compass 0.10
 
+compile '/assets/sass/_*_/' do
+    nil
+end
 
 compile '/assets/sass/*/' do
     filter :sass, Compass.sass_engine_options
