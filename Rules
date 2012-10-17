@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+require 'compass'
+
 # A few helpful tips about the Rules file:
 #
 # * The string given to #compile and #route are matching patterns for
@@ -12,6 +14,8 @@
 #   “content/about.html”). To select all children, grandchildren, … of an
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
+
+Compass.add_project_configuration 'compass/config.rb' # when using Compass 0.10
 
 compile '/stylesheet/' do
   # don’t filter or layout
