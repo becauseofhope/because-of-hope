@@ -10,3 +10,9 @@ gem 'builder'
 
 # nanoc
 gem 'nanoc'
+
+# Zurb Foundation
+gem 'zurb-foundation'
+
+# Compass
+gem 'compass'
