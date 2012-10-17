@@ -16,19 +16,28 @@ require 'zurb-foundation'
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
+# Zurb Stuff
+
 Compass.add_project_configuration 'compass/config.rb' # when using Compass 0.10
 
-compile '/assets/sass/_*_/' do
+compile '/assets/stylesheets/_*_/' do
     nil
 end
 
-compile '/assets/sass/*/' do
+compile '/assets/stylesheets/*/' do
     filter :sass, Compass.sass_engine_options
 end
 
-route '/assets/sass/*/' do
+route '/assets/stylesheets/*/' do
     item.identifier.chop + '.css'
 end
+
+route '/assets/stylesheets/_*/' do
+    # No partials
+    nil
+end
+
+# Site Content Stuff
 
 compile '*' do
   if item.binary?
