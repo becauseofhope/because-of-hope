@@ -17,9 +17,6 @@ require 'compass'
 
 Compass.add_project_configuration 'compass/config.rb' # when using Compass 0.10
 
-compile '/stylesheet/' do
-  # don’t filter or layout
-end
 
 compile '*' do
   if item.binary?
@@ -30,9 +27,6 @@ compile '*' do
   end
 end
 
-route '/stylesheet/' do
-  '/style.css'
-end
 
 route '*' do
   if item.binary?
