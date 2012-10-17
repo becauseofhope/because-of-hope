@@ -1,7 +1,7 @@
 http_path    = "/" 
 project_path = "." 
-css_dir      = "output/assets/style" 
-sass_dir     = "content/assets/style" 
+css_dir      = "output/assets/stylesheet" 
+sass_dir     = "content/assets/sass" 
 images_dir   = "output/assets/images"
 
 # when using SCSS:

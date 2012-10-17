@@ -18,12 +18,8 @@ require 'compass'
 Compass.add_project_configuration 'compass/config.rb' # when using Compass 0.10
 
 
-compile '/assets/style/*/' do
+compile '/assets/sass/*/' do
     filter :sass, Compass.sass_engine_options
-end
-
-route '/assets/style/*/' do
-  item.identifier.chop + '.css'
 end
 
 compile '*' do
