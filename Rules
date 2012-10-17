@@ -26,6 +26,10 @@ compile '/assets/sass/*/' do
     filter :sass, Compass.sass_engine_options
 end
 
+route '/assets/sass/*/' do
+    item.identifier.chop + '.css'
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items
