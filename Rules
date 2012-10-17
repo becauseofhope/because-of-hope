@@ -20,7 +20,7 @@ require 'zurb-foundation'
 
 Compass.add_project_configuration 'compass/config.rb' # when using Compass 0.10
 
-compile '/assets/stylesheets/_*_/' do
+compile '/assets/stylesheets/_*/' do
     nil
 end
 
@@ -28,14 +28,15 @@ compile '/assets/stylesheets/*/' do
     filter :sass, Compass.sass_engine_options
 end
 
-route '/assets/stylesheets/*/' do
-    item.identifier.chop + '.css'
-end
-
 route '/assets/stylesheets/_*/' do
     # No partials
     nil
 end
+
+route '/assets/stylesheets/*/' do
+    item.identifier.chop + '.css'
+end
+
 
 # Site Content Stuff
 
