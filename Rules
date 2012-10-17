@@ -18,6 +18,14 @@ require 'compass'
 Compass.add_project_configuration 'compass/config.rb' # when using Compass 0.10
 
 
+compile '/assets/style/*/' do
+    filter :sass, Compass.sass_engine_options
+end
+
+route '/assets/style/*/' do
+  item.identifier.chop + '.css'
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items
@@ -26,7 +34,6 @@ compile '*' do
     layout 'default'
   end
 end
-
 
 route '*' do
   if item.binary?

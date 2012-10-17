@@ -8,3 +8,4 @@ tmp/
 
 # Logs
 *.log
+.sass-cache/
