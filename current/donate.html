@@ -20,6 +20,8 @@
         s.parentNode.insertBefore(wf, s);
       })();
     </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/jquery-placeholder-fix.js"></script>
 	<style type="text/css">
 	body {
 		background: url('http://becauseofhope.org/images/background-dark.png') ;
@@ -128,7 +130,26 @@
         text-transform: uppercase;
         font-weight: normal;
         margin: 10px;
+    }
 
+    .donate-option form {
+        position: relative;
+    }
+
+    .donate-option .amount {
+        position: absolute;
+        top: 166px;
+        left: 86px;
+        font-size: 12pt;
+        width: 130px;
+        background: rgba(90, 58, 81, .7);
+        color: white;
+        text-align: right;
+        padding: 3px;
+    }
+    
+    .donate-option .amount:focus{
+        outline-color: white;
     }
 
     #wrapper #content .donate-option .hero-text {
@@ -138,6 +159,10 @@
         width: 480px;
         float: right;
         padding: 5px;
+    }
+
+    #wrapper #content .donate-option .hero-text p{
+        margin: 0px;
     }
 
     #wrapper #content .hero-pictures {
@@ -157,7 +182,23 @@
     #content .hero-pictures img, #content .hero-pictures input[type="image"] {
         width: 230px;
     }
-	
+    .placeholder {
+        color: white;
+    }
+
+    :-webkit-input-placeholder {
+        font-size: 5px;
+        font-style: italic;
+        color: white;
+    }
+    :-moz-placeholder {
+        font-size: 12px;
+        color: white;
+    }
+    :-ms-input-placeholder {
+        font-size: 12px;
+        color: white;
+    }
 	</style>
 	</head>
 	<body>
@@ -176,28 +217,29 @@
 		<a href="http://becauseofhope.tumblr.com/tagged/getinvolved">&nbsp;get involved&nbsp;</a> &nbsp; 
 		<a href="http://becauseofhope.tumblr.com/tagged/blog">&nbsp;blog&nbsp;</a> &nbsp; 
 		<a href="http://bohshop.bigcartel.com">&nbsp;shop&nbsp;</a> &nbsp; 
-		<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KLRDGXVBK85DG">&nbsp;donate&nbsp;</a>
+		<a href="http://becauseofhope.org/donate.html">&nbsp;donate&nbsp;</a>
 		</div>
 		<div class="line">
 		
 		</div>
         <div id="content">
             <div class="donate-option">
-                <h1>Donate to our student scholarship program:</h1>
+                <h1>Make a general donation to BOH:</h1>
                 <div class="hero-pictures">
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <form name="onetime_general" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                         <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="ZXTBLZGYBDNLW">
-                        <input type="image" src="images/donation_onetimestudents_topleft.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <input type="hidden" name="hosted_button_id" value="YNT9VCRFZAW3G">
+                        <input type="image" src="images/button_general_onetime.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                     </form>
 
-                    <form name="_xclick" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <form name="recurring_general" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                         <input type="hidden" name="cmd" value="_xclick-subscriptions">
                         <input type="hidden" name="business" value="sales@becauseofhope.org">
+                        <input type="hidden" name="item_name" value="BOH: Recurring Donation">
                         <input type="hidden" name="currency_code" value="USD">
                         <input type="hidden" name="no_shipping" value="1">
-                        <input type="image" src="images/donation_reoccurringstudents_topright.png" border="0" name="submit" >
-                        <input type="hidden" name="a3" value="5.00">
+                        <input class="amount" type="text" placeholder="monthly amount" name="a3" autocomplete="off" required="required">
+                        <input type="image" src="images/button_general_reoccur.png" border="0" name="submit" >
                         <input type="hidden" name="p3" value="1">
                         <input type="hidden" name="t3" value="M">
                         <input type="hidden" name="src" value="1">
@@ -206,54 +248,59 @@
                 </div>
                 <div class="hero-text">
                     <p>
-                    BOH is an organization that sustainably supports widows and
-                    orphans in Uganda, Africa. A part of our mission is to
-                    empower orphans and underprivileged children by providing
-                    them with the opportunity  to obtain an education in
-                    Uganda. (Read more about our scholarship program here.) By
-                    making a donation today, your contribution will go directly
-                    towards our student scholarship program. Donors can
-                    contribute any single amount today, or you can sign up to
-                    support our students on a monthly basis.  With our
-                    reoccurring donors, you may cancel your subscription at any
-                    time you choose. Donations made today will be
-                    tax-deductible as soon as we receive our 501(c)3, our
-                    non-profit status, from the government.  Any contribution
-                    you provide is greatly appreciated by all our BOH members,
-                    here in the U.S. as well as in Uganda.
+                    A part of our mission at BOH is to empower widows and underprivileged women by
+                    providing them with opportunities to increase their livelihood through
+                    sustainable means. By making a general
+                    donation today, your contribution will help support these ladies and will go
+                    toward general program operations, and toward spreading awareness here in the U.S..
+                    Currently, BOH is run on a volunteer basis. Donors can contribute any single
+                    amount today, or you can sign up to support our BOH on a monthly basis. For
+                    our recurring donors, you may cancel your subscription at any time you
+                    choose. Because of Hope (BOH) is a registered 501(c)(3) nonprofit organization.
+                    All donations are tax deductible. Any contribution you provide is greatly
+                    appreciated by everyone at BOH, both here in the U.S. as well as in Uganda.
                     </p>
                 </div>
             </div>
             <div class="line"/>
             <div class="donate-option">
-                <h1>Make a general donation to BOH:</h1>
+                <h1>Donate to our student scholarship program:</h1>
                 <div class="hero-pictures">
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <form name="onetime_student" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                         <input type="hidden" name="cmd" value="_s-xclick">
-                        <input type="hidden" name="hosted_button_id" value="YNT9VCRFZAW3G">
-                        <input type="image" src="images/donation_onetimegeneral_bottomleft.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <input type="hidden" name="hosted_button_id" value="ZXTBLZGYBDNLW">
+                        <input type="image" src="images/button_student_onetime.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                     </form>
 
-                    <img src="images/donation_reoccurringgeneral_bottomright.png"/>
+                    <form name="recurring_student" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_xclick-subscriptions">
+                        <input type="hidden" name="business" value="sales@becauseofhope.org">
+                        <input type="hidden" name="item_name" value="BOH: Recurring Student Scholarship Donation">
+                        <input type="hidden" name="currency_code" value="USD">
+                        <input type="hidden" name="no_shipping" value="1">
+                        <input class="amount" type="text" placeholder="monthly amount" name="a3" autocomplete="off" required="required">
+                        <input type="image" src="images/button_student_reoccur.png" border="0" name="submit" >
+                        <input type="hidden" name="p3" value="1">
+                        <input type="hidden" name="t3" value="M">
+                        <input type="hidden" name="src" value="1">
+                        <input type="hidden" name="sra" value="1">
+                    </form>
                 </div>
                 <div class="hero-text">
-                    BOH is an organization that sustainably supports widows and
-                    orphans in Uganda, Africa. A part of our mission is to
-                    empower widows and underprivileged women by providing them
-                    with opportunities to increase their livelihood through
-                    sustainable means. (Read more about how we operate here.)
-                    By making a general donation today, your contribution will
-                    help support these ladies and will go toward general
-                    program upkeep, and spreading awareness here in the U.S..
-                    Currently, BOH is run solely on a volunteer basis only.
+                    <p>
+                    A part of our mission at BOH is to empower orphans and
+                    underprivileged children by providing them with the
+                    opportunity to obtain an education in Uganda. By making a donation today, your contribution
+                    will go directly towards our student scholarship program.
                     Donors can contribute any single amount today, or you can
-                    sign up to support our BOH on a monthly basis.  With our
-                    reoccurring donors, you may cancel your subscription at any
-                    time you choose. Donations made today will be
-                    tax-deductible as soon as we receive our 501(c)3, our
-                    non-profit status, from the government. On behalf of BOH,
-                    and our beneficiaries in Uganda, we thank your for your
-                    contribution.
+                    sign up to support our students on a monthly basis. For
+                    our recurring donors, you may cancel your subscription at
+                    any time you choose. Because of Hope (BOH) is a registered
+                    501(c)(3) nonprofit organization. All donations are tax
+                    deductible. Any contribution you provide is greatly
+                    appreciated by everyone at BOH, both here in the U.S. as
+                    well as in Uganda.
+                    </p>
                 </div>
             </div>
 		</div>
