@@ -13,6 +13,7 @@ GEM
     cri (2.3.0)
       colored (>= 1.2)
     fssm (0.2.9)
+    haml (3.1.4)
     mime-types (1.19)
     modular-scale (1.0.2)
       compass (>= 0.11.5)
@@ -38,6 +39,7 @@ DEPENDENCIES
   adsf
   builder
   compass
+  haml
   mime-types
   nanoc
   rack
