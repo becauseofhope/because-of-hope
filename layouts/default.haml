@@ -1,6 +1,10 @@
 !!!
 %html
   %head
+    %title= "BOH - #{item[:title]}"
+    %link{:href => "/assets/stylesheets/app.css", :rel => "stylesheet"}
+    %script{:href => "/assets/javascript/foundation/modernizr-foundation.js"}
+    %script{:href => "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
   %body
-    #main
+    .main
       = yield
