@@ -16,3 +16,8 @@ gem 'zurb-foundation'
 
 # Compass
 gem 'compass'
+
+
+# Rack for pow
+gem 'rack'
+gem 'rack-rewrite', :require => 'rack/rewrite'
