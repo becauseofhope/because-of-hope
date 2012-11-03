@@ -44,11 +44,14 @@ end
 # Site Content Stuff
 
 compile '*' do
-  if item.binary?
-    # don’t filter binary items
-  else
-    layout 'default'
-  end
+    if item.binary?
+        # don’t filter binary items
+    else
+        if (item[:extension] == "haml")
+            filter :haml
+        end
+        layout 'default'
+    end
 end
 
 route '*' do
