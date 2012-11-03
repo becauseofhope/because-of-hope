@@ -49,6 +49,8 @@ compile '*' do
     else
         if (item[:extension] == "haml")
             filter :haml
+        else
+            filter :erb
         end
         layout 'default'
     end
