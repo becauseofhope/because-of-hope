@@ -24,7 +24,7 @@ compile '/assets/stylesheets/_*/' do
     nil
 end
 
-compile '/assets/stylesheets/*/' do
+compile '/assets/stylesheets/*.scss/' do
     filter :sass, Compass.sass_engine_options
 end
 
