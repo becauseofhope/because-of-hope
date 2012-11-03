@@ -48,7 +48,6 @@ compile '*' do
   if item.binary?
     # don’t filter binary items
   else
-    filter :erb
     layout 'default'
   end
 end
