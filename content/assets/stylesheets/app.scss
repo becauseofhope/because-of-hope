@@ -47,17 +47,11 @@
 // @import "foundation/components/modules/offcanvas";
 
 header {
-    @include outerRow();
     .logo {
-        @include column(3);
         img {
             width: 140px;
             height: 68px;
             padding: 10px;
         }
     }
-    .nav {
-        @include column(9);
-    }
-    
 }

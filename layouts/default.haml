@@ -1,14 +1,17 @@
 !!! 5
 %html
   %head
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
     %title= "BOH - #{item[:title]}"
     %link{:href => "/assets/stylesheets/app.css", :rel => "stylesheet"}
     %script{:href => "/assets/javascript/foundation/modernizr-foundation.js"}
+    %script{:href => "/assets/javascript/foundation/foundation-min.js"}
+    %script{:href => "/assets/javascript/foundation/app.js"}
     %script{:href => "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
   %body
     %header
       .row
-        .three.columns
+        .three.columns.logo
           %a{:href => "/"}
             %img{:src => "/assets/images/logo.png"}
         .nine.columns
