@@ -45,3 +45,14 @@
 // @import "foundation/components/modules/orbit";
 // @import "foundation/components/modules/reveal";
 // @import "foundation/components/modules/offcanvas";
+
+header {
+    @include outerRow();
+    .logo {
+        @include column(3);
+    }
+    .nav {
+        @include column(9);
+    }
+    
+}

@@ -6,25 +6,24 @@
     %script{:href => "/assets/javascript/foundation/modernizr-foundation.js"}
     %script{:href => "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
   %body
-    .header
-      .row
-        .three.columns
-          %a{:href => "/"}
-            %img{:src => "http://placehold.it/140x68"}
-        .nine.columns
-          %ul{:class => "nav-bar right"}
-            %li 
-              %a{:href => "/"} Home
-            %li 
-              %a{:href => "/"} About Us
-            %li 
-              %a{:href => "/"} Get Involved
-            %li 
-              %a{:href => "/"} Blog
-            %li 
-              %a{:href => "/"} Shop
-            %li 
-              %a{:href => "/"} Donate
+    %header
+      .logo
+        %a{:href => "/"}
+          %img{:src => "http://placehold.it/140x68"}
+      .nav
+        %ul{:class => "nav-bar right"}
+          %li 
+            %a{:href => "/"} Home
+          %li 
+            %a{:href => "/"} About Us
+          %li 
+            %a{:href => "/"} Get Involved
+          %li 
+            %a{:href => "/"} Blog
+          %li 
+            %a{:href => "/"} Shop
+          %li 
+            %a{:href => "/"} Donate
     .main
       %hr
       = yield
