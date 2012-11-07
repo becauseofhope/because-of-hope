@@ -71,3 +71,17 @@ hr {
     margin: 3px 0px;
     border-width: 2px;
 }
+
+.nav {
+    ul {
+        background-color: transparent;
+        li {
+            &:hover {
+                background-color: transparent;
+            }
+            &, &:last-child {
+                @include box-shadow(none);
+            }
+        }
+    }
+}
