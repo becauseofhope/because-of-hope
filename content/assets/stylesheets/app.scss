@@ -81,6 +81,7 @@ hr {
             }
             &, &:last-child {
                 @include box-shadow(none);
+                border: none;
             }
             a {
                 color: $txtColor;
