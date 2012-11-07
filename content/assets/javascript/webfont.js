@@ -1,6 +1,6 @@
 WebFontConfig = {
     custom: { families: ['League Gothic'],
-        urls: ['css/fonts/league-gothic/stylesheet.css'] }
+        urls: ['/assets/fonts/league-gothic/stylesheet.css'] }
 };
 (function() {
     var wf = document.createElement('script');

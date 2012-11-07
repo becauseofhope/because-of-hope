@@ -41,6 +41,11 @@ route '/assets/javascript/*' do
     item.identifier.chop + '.js'
 end
 
+route '/static/*' do
+  # /static/foo.html/ → /foo.html
+  item.identifier[7..-2]
+end
+
 # Site Content Stuff
 
 compile '*' do
