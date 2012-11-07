@@ -82,6 +82,13 @@ hr {
             &, &:last-child {
                 @include box-shadow(none);
             }
+            a {
+                color: $txtColor;
+                &:hover {
+                    color: white;
+                    background-color: #5A3A51;
+                }
+            }
         }
     }
 }
