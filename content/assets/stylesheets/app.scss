@@ -46,6 +46,10 @@
 // @import "foundation/components/modules/reveal";
 // @import "foundation/components/modules/offcanvas";
 
+body {
+    background-color: $backgroundColor;
+}
+
 header {
     .logo {
         img {
