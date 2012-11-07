@@ -59,12 +59,6 @@ header {
             margin: 10px 0px;
         }
     }
-    .nav {
-        ul {
-            margin-bottom: 0;
-            margin-top: 40px;
-        }
-    }
 }
 
 hr {
@@ -75,6 +69,10 @@ hr {
 .nav {
     ul {
         background-color: transparent;
+        @media only screen and (min-width: 767px) {
+            margin-bottom: 0;
+            margin-top: 40px;
+        }
         li {
             &:hover {
                 background-color: transparent;
@@ -85,6 +83,8 @@ hr {
             }
             a {
                 color: $txtColor;
+                text-transform: lowercase;
+                letter-spacing: 2px;
                 &:hover {
                     color: white;
                     background-color: #5A3A51;
