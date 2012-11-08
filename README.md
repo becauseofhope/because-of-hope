@@ -1,11 +1,28 @@
-# Because of Hope
+# Because of Hope, a 501(c)(3) organization
 
-This is the BOH website. It is built with nanoc.
+This is the source for a 501(c)(3) Because of Hope's website. It is nanoc
+website. This site is meant to be deployed to Amazon S3 and served from there.
+
+The website and infrastructure is still under heavy development and iteration.
+It is meant to replace the $20 a month VPS that currently serves 2 HTML files
+with a GoDaddy domain name/DNS with an Amazon S3-backed static website with
+a domain name/DNS not by GoDaddy at least.  
+
+For now, all artwork, text, and design that made by Because of Hope should be
+considered "All Rights Reserved". Everything else is under their original
+license. 
+
+## Tools used
+
+* Zurb Foundation
+* Compass
+* nanoc
+* Haml
 
 ## Sources
 
-Background is from Subtlepatterns.com as Concrete Wall.
+Former background is from subtlepatterns.com as Concrete Wall.
 
-### References for stuff used.
+### References, notes, and links for stuff used.
 
 [Credentials for fog deployment](https://github.com/ddfreyne/nanoc/issues/100)
