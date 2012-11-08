@@ -78,3 +78,9 @@ watcher:
   # When to send notifications (using Growl or notify-send).
   notify_on_compilation_success: false
   notify_on_compilation_failure: false
+
+deploy:
+  default:
+    kind: fog
+    provider: aws
+    bucket: boh-beta
