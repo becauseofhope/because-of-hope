@@ -108,10 +108,18 @@ h1, h2, h3, h4, h5, h6 {
 
 // Elements
 
-a.button {
-    @extend a.radius.button;
-    font-family: $headerFontFamily;
-}
 
 // Donate Page specific
+.donate-option {
+    a.button {
+        @extend a.radius.button;
+        padding: 8px 24px;
+        border: none;
+        @include box-shadow(none);
+        font-weight: normal;
+        font-family: $headerFontFamily;
+        text-transform: uppercase;
+        font-size: 44px; 
+    }
+}
 
