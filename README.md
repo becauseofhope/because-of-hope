@@ -1,7 +1,9 @@
 # Because of Hope, a 501(c)(3) organization
 
-This is the source for a 501(c)(3) Because of Hope's website. It is nanoc
-website. This site is meant to be deployed to Amazon S3 and served from there.
+[becauseofhope.org](http://www.becauseofhope.org) _Not yet deployed!_
+
+This is the source for a Because of Hope's website. BOH is a 501(c)(3)
+organization. 
 
 The website and infrastructure is still under heavy development and iteration.
 It is meant to replace the $20 a month VPS that currently serves 2 HTML files
