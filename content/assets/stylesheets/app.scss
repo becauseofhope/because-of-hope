@@ -122,21 +122,21 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 44px; 
         &:after {
             content: ">";
+            padding: 6px 13px;
+            color: $mainColor;
             font-size: 30px;
             vertical-align: middle;
-            padding: 6px 13px;
             position: absolute;
             right: 0;
-            color: $mainColor;
         }
         &:before {
+            content: "\25CF";
             width: 44px;
             height: 44px;
-            content: "\25CF";
-            position: absolute;
-            right: 0;
             font-size: 75px;
+            position: absolute;
             top: -12px
+            right: 0;
         }
     }
 }
