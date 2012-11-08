@@ -23,3 +23,6 @@ gem 'rack-rewrite', :require => 'rack/rewrite'
 
 # Haml
 gem 'haml'
+
+# Deployment to cloud
+gem 'fog'
