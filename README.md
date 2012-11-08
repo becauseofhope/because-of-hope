@@ -1,4 +1,4 @@
-# Because of Hope, a 501(c)(3) organization
+# Because of Hope
 
 [becauseofhope.org](http://www.becauseofhope.org) _Not yet deployed!_
 
