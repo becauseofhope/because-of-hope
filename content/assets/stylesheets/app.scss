@@ -110,8 +110,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .banner {
     img {
-        height: 205px;
-        width: 1000px;
     }
 }
 
@@ -120,8 +118,6 @@ h1, h2, h3, h4, h5, h6 {
 // Donate Page specific
 .donate-option {
     img {
-        width: 470px;
-        height: 282px;
     }
     a.button {
         @extend a.radius.button;
