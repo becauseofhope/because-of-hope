@@ -8,7 +8,8 @@ organization.
 The website and infrastructure is still under heavy development and iteration.
 It is meant to replace the $20 a month VPS that currently serves 2 HTML files
 with a GoDaddy domain name/DNS with an Amazon S3-backed static website with
-a domain name/DNS not by GoDaddy at least.  
+a domain name/DNS not by GoDaddy at least. BOH will be paying pennies,
+literally. 
 
 For now, all artwork, text, and design that made by Because of Hope should be
 considered "All Rights Reserved". Everything else is under their original
