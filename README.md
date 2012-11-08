@@ -2,7 +2,7 @@
 
 [becauseofhope.org](http://www.becauseofhope.org) _Not yet deployed!_
 
-This is the source for a Because of Hope's website. BOH is a 501(c)(3)
+This is the source for Because of Hope's website. BOH is a 501(c)(3)
 organization. 
 
 The website and infrastructure is still under heavy development and iteration.
