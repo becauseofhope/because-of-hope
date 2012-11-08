@@ -50,7 +50,7 @@
 
 body {
     background-color: $backgroundColor;
-    background: url("/assets/images/concrete_wall.png")
+//    background: url("/assets/images/concrete_wall.png")
 }
 
 header {
@@ -64,12 +64,13 @@ header {
 }
 
 hr {
-    margin: 3px 0px;
+    margin: 10px 0px;
     border-width: 2px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
+    color: #027d7d;
 }
 
 .nav {
@@ -77,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
         background-color: transparent;
         @media only screen and (min-width: 767px) {
             margin-bottom: 0;
-            margin-top: 40px;
+            margin-top: 50px;
         }
         li {
             &:hover {
@@ -100,11 +101,51 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+// Elements
+
 .sidebar {
     background-color: gray;
     padding: 10px;
 }
 
+.banner {
+    img {
+    }
+}
+
+
 
 // Donate Page specific
+.donate-option {
+    img {
+    }
+    a.button {
+        @extend a.radius.button;
+        padding: 8px 45px 8px 8px;
+        border: none;
+        @include box-shadow(none);
+        font-weight: normal;
+        font-family: $headerFontFamily;
+        text-transform: uppercase;
+        font-size: 44px; 
+        &:after {
+            content: ">";
+            padding: 6px 13px;
+            color: $mainColor;
+            font-size: 30px;
+            vertical-align: middle;
+            position: absolute;
+            right: 0;
+        }
+        &:before {
+            content: "\25CF";
+            width: 44px;
+            height: 44px;
+            font-size: 75px;
+            position: absolute;
+            top: -12px;
+            right: 0;
+        }
+    }
+}
 

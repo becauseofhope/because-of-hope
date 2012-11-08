@@ -83,4 +83,4 @@ deploy:
   default:
     kind: fog
     provider: aws
-    bucket: boh-beta
+    bucket: alpha.becauseofhope.org
