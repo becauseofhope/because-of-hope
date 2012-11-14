@@ -64,12 +64,17 @@ header {
 
     .top-line hr {
         margin-bottom: 0px;
+        border: solid;
+        border-width: 2px;
     }
 }
 
 hr {
     margin: 10px 0px;
-    border-width: 2px;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+    height: 4px;
 }
 
 h1, h2, h3, h4, h5, h6 {
