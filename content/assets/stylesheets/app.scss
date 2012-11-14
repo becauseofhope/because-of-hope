@@ -137,6 +137,18 @@ p {
     }
 }
 
+// Front Page specific
+
+.front-video {
+    iframe {
+        @media only screen and (min-width: 767px) {
+            height: 505px;
+        }
+        @media only screen and (max-width: 767px) {
+            height: 250px;
+        }
+    }
+}
 
 
 // Donate Page specific
