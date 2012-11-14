@@ -56,10 +56,14 @@ body {
 header {
     .logo {
         img {
-            width: 127px;
-            height: 70px;
+            width: 181px;
+            height: 100px;
             margin: 0 0 -15px 0;
         }
+    }
+
+    .top-line hr {
+        margin-bottom: 0px;
     }
 }
 
