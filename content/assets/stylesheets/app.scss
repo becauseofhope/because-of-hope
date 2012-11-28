@@ -1,0 +1,187 @@
+// You custom settings file to override Foundation defaults
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// ----------------------------------------
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "compass/css3";
+// @import "foundation/settings";
+// @import "foundation/functions/all";
+
+// Control which mixins you have access too
+
+// @import "foundation/mixins/clearfix";
+// @import "foundation/mixins/css-triangle";
+// @import "foundation/mixins/font-size";
+
+// Must include next two for semantic grid to work
+
+// @import "foundation/mixins/respond-to";
+// @import "foundation/mixins/semantic-grid";
+
+// @import "foundation/common/globals";
+// @import "modular-scale";
+
+// Must include the grid for any responsiveness
+
+// @import "foundation/components/grid";
+
+// Control which common styles get compiled
+
+// @import "foundation/common/typography";
+// @import "foundation/common/forms";
+
+// Control which components you get if customizing
+
+// @import "foundation/components/modules/buttons";
+// @import "foundation/components/modules/tabs";
+// @import "foundation/components/modules/ui";
+// @import "foundation/components/modules/topbar";
+// @import "foundation/components/modules/navbar";
+// @import "foundation/components/modules/orbit";
+// @import "foundation/components/modules/reveal";
+// @import "foundation/components/modules/offcanvas";
+
+@import "fonts";
+
+body {
+    background-color: $backgroundColor;
+//    background: url("/assets/images/concrete_wall.png")
+}
+
+header {
+    .logo {
+        img {
+            width: 181px;
+            height: 100px;
+            margin: 0 0 -15px 0;
+        }
+    }
+
+    .top-line hr {
+        margin-bottom: 0px;
+        border: solid;
+        border-width: 2px;
+        height: 4px;
+    }
+}
+
+hr {
+    margin: 10px 0px;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+    height: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    color: #027d7d;
+}
+
+.nav {
+    ul {
+        background-color: transparent;
+        @media only screen and (min-width: 767px) {
+            margin-bottom: 0;
+            /* margin-top: 50px; */
+        }
+        li {
+            &:hover {
+                background-color: transparent;
+            }
+            &, &:last-child {
+                @include box-shadow(none);
+                border: none;
+            }
+            a {
+                color: $txtColor;
+                text-transform: lowercase;
+                letter-spacing: 2px;
+                &:hover {
+                    color: white;
+                    background-color: #5A3A51;
+                }
+            }
+        }
+    }
+}
+
+p {
+    line-height: 1.2;
+}
+
+// Elements
+
+.sidebar {
+    background-color: gray;
+    padding: 10px;
+    h1, h2, h3, h4, h5, h6 {
+        color: $white;
+        &:first-child{
+            margin-top: 0px;
+        }
+    }
+}
+
+.banner {
+    img {
+    }
+
+    hr {
+        margin-top: -2px;
+    }
+}
+
+// Front Page specific
+
+.front-video {
+    iframe {
+        @media only screen and (min-width: 767px) {
+            height: 505px;
+        }
+        @media only screen and (max-width: 767px) {
+            height: 250px;
+        }
+    }
+}
+
+
+// Donate Page specific
+.donate-option {
+    img {
+    }
+    a.button {
+        @extend a.radius.button;
+        padding: 8px 45px 8px 8px;
+        border: none;
+        @include box-shadow(none);
+        font-weight: normal;
+        font-family: $headerFontFamily;
+        text-transform: uppercase;
+        font-size: 44px; 
+        &:after {
+            content: ">";
+            padding: 6px 13px;
+            color: $mainColor;
+            font-size: 30px;
+            vertical-align: middle;
+            position: absolute;
+            right: 0;
+        }
+        &:before {
+            content: "\25CF";
+            width: 44px;
+            height: 44px;
+            font-size: 75px;
+            position: absolute;
+            top: -12px;
+            right: 0;
+        }
+    }
+}   
+
