@@ -6,12 +6,13 @@
     .main
       - if @item[:header_img]
         .row
-          .twelve.columns
+          .twelve.columns.banner
             %img{src:@item[:header_img]}
+            %hr
       - if @item[:sidebar] == false
         .row
           .twelve.columns
-          = yield
+            = yield
       - else
         .row
           .eight.columns
