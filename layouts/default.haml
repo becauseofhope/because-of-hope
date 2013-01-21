@@ -4,6 +4,10 @@
   %body
     = render 'header'
     .main
+      - if @item[:header_img]
+        .row
+          .twelve.columns
+            %img{src:@item[:header_img]}
       = yield
     = render 'footer'
 
