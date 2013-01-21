@@ -8,14 +8,15 @@
         .row
           .twelve.columns
             %img{src:@item[:header_img]}
-      .row
       - if @item[:sidebar] == false
-        .twelve.columns
-        = yield
+        .row
+          .twelve.columns
+          = yield
       - else
-        .eight.columns
-        = yield
-        .four.columns
-          %h1 test
+        .row
+          .eight.columns
+            = yield
+          .four.columns
+            = render 'sidebar'
     = render 'footer'
 
