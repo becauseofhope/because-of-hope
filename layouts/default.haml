@@ -1,58 +1,22 @@
 !!! 5
 %html
-  %head
-    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
-    %title= "BOH - #{item[:title]}"
-    %link{:href => "/assets/stylesheets/app.css", :rel => "stylesheet"}
-    %script{:href => "/assets/javascript/foundation/modernizr-foundation.js"}
-    %script{:href => "/assets/javascript/foundation/foundation-min.js"}
-    %script{:href => "/assets/javascript/foundation/app.js"}
-    -# %script{:href => "/assets/javascript/webfont.js"}
-    %script{:href => "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
+  = render 'head'
   %body
-    %header
-      .row
-        .three.columns.logo
-          %a{:href => "/"}
-            %img{:src => "/assets/images/logo.png"}
-        .nine.columns
-          .nav
-            %ul{:class => "nav-bar right"}
-              %li 
-                %a{:href => "/"} Home
-              %li 
-                %a{:href => "/aboutus/"} About Us
-              %li 
-                %a{:href => "/"} Programs
-              %li 
-                %a{:href => "/"} Get Involved
-              %li 
-                %a{:href => "http://bohshop.bigcartel.com/"} Shop
-              %li 
-                %a{:href => "/donate/"} Donate
-              %li 
-                %a{:href => "http://becauseofhope.tumblr.com/tagged/blog"} Blog
-      .row
-        .twelve.columns.header-line.top-line
-          %hr
+    = render 'header'
     .main
-      = yield
-    #footer
-      .row
-        .twelve.columns.header-line
-          %hr
-      .row
-        .nine.columns
-          .nav
-            %ul{:class => "inline-list left"}
-              -# %li 
-                -# %a{:href => "/financial/"} Financial
-              %li 
-                %a{:href => "http://becauseofhope.tumblr.com/tagged/blog"} Blog
-              %li 
-                %a{:href => "/donate/"} Donate
-              -# %li 
-                -# %a{:href => "/"} Return Policy
-        .three.columns
-          %p 
+      - if @item[:header_img]
+        .row
+          .twelve.columns
+            %img{src:@item[:header_img]}
+      - if @item[:sidebar] == false
+        .row
+          .twelve.columns
+          = yield
+      - else
+        .row
+          .eight.columns
+            = yield
+          .four.columns
+            = render 'sidebar'
+    = render 'footer'
 
