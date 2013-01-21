@@ -10,31 +10,7 @@
     -# %script{:href => "/assets/javascript/webfont.js"}
     %script{:href => "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
   %body
-    %header
-      .row
-        .three.columns.logo
-          %a{:href => "/"}
-            %img{:src => "/assets/images/logo.png"}
-        .nine.columns
-          .nav
-            %ul{:class => "nav-bar right"}
-              %li
-                %a{:href => "/"} Home
-              %li
-                %a{:href => "/aboutus/"} About Us
-              %li
-                %a{:href => "/"} Programs
-              %li
-                %a{:href => "/"} Get Involved
-              %li
-                %a{:href => "http://bohshop.bigcartel.com/"} Shop
-              %li
-                %a{:href => "/donate/"} Donate
-              %li
-                %a{:href => "http://becauseofhope.tumblr.com/tagged/blog"} Blog
-      .row
-        .twelve.columns.header-line.top-line
-          %hr
+    = render 'header'
     .main
       = yield
     %footer
