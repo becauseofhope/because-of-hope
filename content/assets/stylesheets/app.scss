@@ -118,13 +118,18 @@ p {
 // Elements
 
 .sidebar {
+    color: #d6d3d2;
     background-color: gray;
     padding: 10px;
     h1, h2, h3, h4, h5, h6 {
         color: #a0c8bd;
+        text-align: center;
         &:first-child{
             margin-top: 0px;
         }
+    }
+    hr {
+        border: solid;
     }
 }
 
