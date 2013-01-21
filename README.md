@@ -26,19 +26,17 @@ license.
 
 Former background is from subtlepatterns.com as Concrete Wall.
 
-### Expected Image Specifications
+## Expected Image Specifications
 
-#### Photoshop
+### Photoshop
 
 "Save for Web", High, JPG
 
-#### Header Images
+### Header Images
 
 Header images should have dimensions of 1000x200.
 
-### References, notes, and links for stuff used.
-
-[Credentials for fog deployment](https://github.com/ddfreyne/nanoc/issues/100)
+## Workarounds
 
 ### Stack level errors
 
@@ -47,3 +45,6 @@ Use this command to get around that for a longer period of time.
 
 `ulimit -s 40000`
 
+## References, notes, and links for stuff used.
+
+[Credentials for fog deployment](https://github.com/ddfreyne/nanoc/issues/100)
