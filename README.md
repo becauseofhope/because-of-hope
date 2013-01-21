@@ -29,3 +29,8 @@ Former background is from subtlepatterns.com as Concrete Wall.
 ### References, notes, and links for stuff used.
 
 [Credentials for fog deployment](https://github.com/ddfreyne/nanoc/issues/100)
+
+### Stack level errors
+
+`ulimit -s 20000`
+
