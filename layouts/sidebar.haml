@@ -1,8 +1,34 @@
 .sidebar
-  %h4 Address
+  .featured
+    %h3 Featured Content
+    .row.program
+      %img{:src => "/assets/images/featured_beads_button.png"}
+    .row.program
+      %img{:src => "/assets/images/featured_bssp_button.png"}
+  %hr
+  %h3 Like us on Facebook
+  .row.fbbutton
+    =render 'fbbutton'
+  %hr
+  %h3 Upcoming Events
+  %p
+    Nov 4, Carlsbad Street Fair, San Diego County
+  %p
+    Nov. 11, Holiday Event on Jason Street, San Diego County
+  %p
+    Nov. 18 Encinitas Fall Festival, San Diego County
+
+  %hr
+  %h3 Contact Us
   %address{:class => "vcard"}
     %span{:class => "adr"}
+      %div{:class => "fn"} Because of Hope
       %div{:class => "street-address"} P.O. Box 30995
       %span{:class => "locality"} Santa Barbara
+      %span,
       %span{:class => "region", :title => "California"} CA
-      %div{:class => "postal-code"} 93130
+      %span{:class => "postal-code"} 93130
+    %br
+    %br
+    %div{:class => "email"} info@becauseofhope.org
+
