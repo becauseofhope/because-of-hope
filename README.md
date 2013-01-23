@@ -22,10 +22,6 @@ license.
 * nanoc
 * Haml
 
-## Sources
-
-Former background is from subtlepatterns.com as Concrete Wall.
-
 ## Expected Image Specifications
 
 ### Photoshop
@@ -41,7 +37,8 @@ Header images should have dimensions of 1000x200.
 ### Stack level errors
 
 When using the built-in server of `nanoc`, Compass seems to break the stack.
-Use this command to get around that for a longer period of time.
+Normally, you can just restart to clear the error.  Use this command to get
+around that for a longer period of time.
 
 `ulimit -s 40000`
 
