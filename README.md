@@ -26,7 +26,7 @@ license.
 
 ### Photoshop
 
-"Save for Web", High, JPG
+"Save for Web", High, JPG, Progressive
 
 ### Header Images
 
