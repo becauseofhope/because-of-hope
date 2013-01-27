@@ -28,19 +28,11 @@ license.
 
 "Save for Web", High, JPG, Progressive
 
+
 ### Header Images
 
 Header images should have dimensions of 1000x200.
 
-## Workarounds
-
-### Stack level errors
-
-When using the built-in server of `nanoc`, Compass seems to break the stack.
-Normally, you can just restart to clear the error.  Use this command to get
-around that for a longer period of time.
-
-`ulimit -s 40000`
 
 ## References, notes, and links for stuff used.
 

@@ -18,7 +18,6 @@ require 'zurb-foundation'
 
 # CSS/Foundation
 
-Compass.add_project_configuration 'compass/config.rb' # when using Compass 0.10
 
 compile '/assets/stylesheets/*/' do
     filter :sass, Compass.sass_engine_options
