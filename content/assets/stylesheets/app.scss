@@ -53,6 +53,9 @@ body {
 //    background: url("/assets/images/concrete_wall.png")
 }
 
+hr {
+    border: 3px solid $white;
+}
 
 header {
     .logo {
@@ -61,6 +64,9 @@ header {
             height: 88px;
             margin: 0 0 -13px 0;
         }
+    }
+    hr {
+        margin-bottom: 0px;
     }
 }
 
