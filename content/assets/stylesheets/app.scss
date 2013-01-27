@@ -57,6 +57,21 @@ hr {
     border: 3px solid $white;
 }
 
+footer, .banner {
+    hr {
+        height: 6px;
+        border: {
+            top-width: 1px;
+            bottom-width: 1px;
+            left-width: 0px;
+            right-width: 0px;
+        }
+    }
+}
+
+.banner hr {
+}
+
 header {
     .logo {
         img {
@@ -110,6 +125,13 @@ p {
 
 // Elements
 
+.banner {
+    hr {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
 .sidebar {
     color: #d6d3d2;
     background-color: gray;
@@ -126,14 +148,6 @@ p {
     }
     .fbbutton {
         text-align: center;
-    }
-}
-
-.banner {
-    img {
-    }
-    hr {
-        margin-top: -2px;
     }
 }
 
