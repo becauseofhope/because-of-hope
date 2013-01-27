@@ -53,6 +53,25 @@ body {
 //    background: url("/assets/images/concrete_wall.png")
 }
 
+hr {
+    border: 3px solid $white;
+}
+
+footer, .banner {
+    hr {
+        height: 6px;
+        border: {
+            top-width: 1px;
+            bottom-width: 1px;
+            left-width: 0px;
+            right-width: 0px;
+        }
+    }
+}
+
+.banner hr {
+}
+
 header {
     .logo {
         img {
@@ -61,22 +80,11 @@ header {
             margin: 0 0 -13px 0;
         }
     }
-
-    .top-line hr {
+    hr {
         margin-bottom: 0px;
-        border: solid;
-        border-width: 2px;
-        height: 4px;
     }
 }
 
-hr {
-    margin: 10px 0px;
-    border-width: 1px;
-    border-left: none;
-    border-right: none;
-    height: 5px;
-}
 
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
@@ -117,6 +125,13 @@ p {
 
 // Elements
 
+.banner {
+    hr {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
 .sidebar {
     color: #d6d3d2;
     background-color: gray;
@@ -128,22 +143,11 @@ p {
             margin-top: 0px;
         }
     }
-    hr {
-        border: solid;
-    }
     .program {
         text-align: center;
     }
     .fbbutton {
         text-align: center;
-    }
-}
-
-.banner {
-    img {
-    }
-    hr {
-        margin-top: -2px;
     }
 }
 
@@ -173,7 +177,7 @@ p {
         font-weight: normal;
         font-family: $headerFontFamily;
         text-transform: uppercase;
-        font-size: 44px; 
+        font-size: 44px;
         &:after {
             content: ">";
             padding: 6px 13px;
@@ -193,5 +197,5 @@ p {
             right: 0;
         }
     }
-}   
+}
 
