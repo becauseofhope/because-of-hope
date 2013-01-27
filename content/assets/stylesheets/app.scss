@@ -53,6 +53,7 @@ body {
 //    background: url("/assets/images/concrete_wall.png")
 }
 
+
 header {
     .logo {
         img {
@@ -61,22 +62,8 @@ header {
             margin: 0 0 -13px 0;
         }
     }
-
-    .top-line hr {
-        margin-bottom: 0px;
-        border: solid;
-        border-width: 2px;
-        height: 4px;
-    }
 }
 
-hr {
-    margin: 10px 0px;
-    border-width: 1px;
-    border-left: none;
-    border-right: none;
-    height: 5px;
-}
 
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
@@ -128,9 +115,6 @@ p {
             margin-top: 0px;
         }
     }
-    hr {
-        border: solid;
-    }
     .program {
         text-align: center;
     }
@@ -173,7 +157,7 @@ p {
         font-weight: normal;
         font-family: $headerFontFamily;
         text-transform: uppercase;
-        font-size: 44px; 
+        font-size: 44px;
         &:after {
             content: ">";
             padding: 6px 13px;
@@ -193,5 +177,5 @@ p {
             right: 0;
         }
     }
-}   
+}
 
