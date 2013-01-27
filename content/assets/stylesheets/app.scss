@@ -182,7 +182,6 @@ p {
     img {
     }
     a.button {
-        @extend a.radius.button;
         padding: 8px 45px 8px 8px;
         border: none;
         @include box-shadow(none);
