@@ -140,8 +140,11 @@ p {
     h1, h2, h3, h4, h5, h6 {
         color: #a0c8bd;
         text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
         &:first-child{
             margin-top: 0px;
+            margin-bottom: -6px;
         }
     }
     .program {
