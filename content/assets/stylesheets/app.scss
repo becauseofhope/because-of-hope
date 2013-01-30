@@ -57,7 +57,7 @@ hr {
     border: 1px solid $white;
 }
 
-footer, .banner {
+footer, .top-line{
     hr {
         height: 6px;
         border: {
@@ -66,6 +66,8 @@ footer, .banner {
             left-width: 0px;
             right-width: 0px;
         }
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }
 
@@ -125,13 +127,6 @@ p {
 }
 
 // Elements
-
-.banner {
-    hr {
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-}
 
 .sidebar {
     color: #d6d3d2;

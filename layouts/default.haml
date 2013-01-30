@@ -9,12 +9,14 @@
         .row
           .twelve.columns.banner
             %img{src:@item[:header_img]}
-            %hr
       - if @item[:sidebar] == false
         = yield
       - else
         .row
           .eight.columns
+            .row
+              .twelve.columns.header-line.top-line
+                %hr
             = yield
           .four.columns
             = render 'sidebar'
