@@ -77,6 +77,10 @@ header {
             margin-bottom: 0;
             margin-top: 50px;
         }
+        @media only screen and (min-width: 767px) and (max-width:1000px) {
+            margin-bottom: 0;
+            margin-top: 0px;
+        }
     }
 }
 
