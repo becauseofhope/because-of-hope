@@ -57,21 +57,11 @@ hr {
     border: 1px solid $white;
 }
 
-footer, .top-line{
+header, footer {
     hr {
-        height: 6px;
-        border: {
-            top-width: 1px;
-            bottom-width: 1px;
-            left-width: 0px;
-            right-width: 0px;
-        }
         margin-top: 0px;
         margin-bottom: 0px;
     }
-}
-
-.banner hr {
 }
 
 header {
@@ -82,11 +72,25 @@ header {
             margin: 0 0 -13px 0;
         }
     }
-    hr {
-        margin-bottom: 0px;
+    .nav ul {
+        @media only screen and (min-width: 767px) {
+            margin-bottom: 0;
+            margin-top: 50px;
+        }
     }
 }
 
+footer {
+    hr {
+        height: 6px;
+        border: {
+            top-width: 1px;
+            bottom-width: 1px;
+            left-width: 0px;
+            right-width: 0px;
+        }
+    }
+}
 
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
@@ -97,10 +101,6 @@ h1, h2, h3, h4, h5, h6 {
 .nav {
     ul {
         background-color: transparent;
-        @media only screen and (min-width: 767px) {
-            margin-bottom: 0;
-            /* margin-top: 50px; */
-        }
         li {
             &:hover {
                 background-color: transparent;
@@ -121,6 +121,7 @@ h1, h2, h3, h4, h5, h6 {
         }
     }
 }
+
 
 p {
     line-height: 1.2;
