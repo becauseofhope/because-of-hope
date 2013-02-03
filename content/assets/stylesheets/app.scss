@@ -138,6 +138,14 @@ p {
 
 // Elements
 
+.banner {
+    @media only screen and (min-width: 1023px) {
+        img {
+            width: 1000px;
+            height: 200px;
+        }
+    }
+}
 .sidebar {
     color: #d6d3d2;
     background-color: gray;
