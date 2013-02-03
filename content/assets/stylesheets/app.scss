@@ -53,43 +53,63 @@ body {
 //    background: url("/assets/images/concrete_wall.png")
 }
 
-header {
-    .logo {
-        img {
-            width: 181px;
-            height: 100px;
-            margin: 0 0 -15px 0;
-        }
-    }
+hr {
+    border: 1px solid $white;
+}
 
-    .top-line hr {
+header, footer {
+    hr {
+        margin-top: 0px;
         margin-bottom: 0px;
-        border: solid;
-        border-width: 2px;
-        height: 4px;
     }
 }
 
-hr {
-    margin: 10px 0px;
-    border-width: 1px;
-    border-left: none;
-    border-right: none;
-    height: 5px;
+header {
+    .logo {
+        img {
+            width: 152px;
+            height: 88px;
+        }
+    }
+    .nav ul {
+        @media only screen and (min-width: 767px) {
+            margin-bottom: 0;
+            margin-top: 50px;
+        }
+        @media only screen and (min-width: 767px) and (max-width:970px) {
+            margin-bottom: 0;
+            margin-top: 0px;
+        }
+    }
+}
+
+footer {
+    hr {
+        height: 6px;
+        border: {
+            top-width: 1px;
+            bottom-width: 1px;
+            left-width: 0px;
+            right-width: 0px;
+        }
+    }
+    .nav ul {
+        @media only screen and (min-width: 767px) {
+            margin-bottom: 0;
+            margin-top: 0px;
+        }
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     color: #027d7d;
+    letter-spacing: 4px;
 }
 
 .nav {
     ul {
         background-color: transparent;
-        @media only screen and (min-width: 767px) {
-            margin-bottom: 0;
-            /* margin-top: 50px; */
-        }
         li {
             &:hover {
                 background-color: transparent;
@@ -111,30 +131,55 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+
 p {
     line-height: 1.2;
 }
 
 // Elements
 
-.sidebar {
-    background-color: gray;
-    padding: 10px;
-    h1, h2, h3, h4, h5, h6 {
-        color: $white;
-        &:first-child{
-            margin-top: 0px;
+.banner {
+    @media only screen and (min-width: 1020px) {
+        img {
+            width: 1000px;
+            height: 200px;
         }
     }
 }
-
-.banner {
-    img {
+.sidebar {
+    color: #d6d3d2;
+    background-color: gray;
+    padding: 10px;
+    padding-bottom: 16px;
+    @include background(linear-gradient(top, #474848, #585858));
+    h1, h2, h3, h4, h5, h6 {
+        color: #a0c8bd;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        &:first-child{
+            margin-top: 0px;
+            margin-bottom: -6px;
+        }
     }
-
+    .program {
+        text-align: center;
+        img {
+            margin-top: 8px;
+            margin-bottom:8px;
+        }
+    }
+    .fbbutton {
+        text-align: left;
+    }
     hr {
-        margin-top: -2px;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
+    address, p {
+        font-style: normal;
+    }
+
 }
 
 // Front Page specific
@@ -156,14 +201,14 @@ p {
     img {
     }
     a.button {
-        @extend a.radius.button;
+        @extend .radius.button;
         padding: 8px 45px 8px 8px;
         border: none;
         @include box-shadow(none);
         font-weight: normal;
         font-family: $headerFontFamily;
         text-transform: uppercase;
-        font-size: 44px; 
+        font-size: 44px;
         &:after {
             content: ">";
             padding: 6px 13px;
@@ -183,5 +228,9 @@ p {
             right: 0;
         }
     }
-}   
+}
+
+// Graceful Orbit Loading State
+#featured img { display: none; }
+#featured.orbit img { display: block; }
 

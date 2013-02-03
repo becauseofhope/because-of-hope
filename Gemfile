@@ -16,7 +16,7 @@ gem 'zurb-foundation'
 
 # Compass
 gem 'compass'
-gem 'sass', '3.2.1'
+gem 'sass'
 
 # Rack for pow
 gem 'rack'
