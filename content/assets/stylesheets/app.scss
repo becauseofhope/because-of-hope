@@ -222,3 +222,7 @@ p {
     }
 }
 
+// Graceful Orbit Loading State
+#featured img { display: none; }
+#featured.orbit img { display: block; }
+
