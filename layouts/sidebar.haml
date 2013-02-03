@@ -1,11 +1,9 @@
 .sidebar
-  .featured
-    %h3 Featured Content
-    %hr
-    .row.program
-      %img{:src => "/assets/images/featured_beads_button.png"}
-    .row.program
-      %img{:src => "/assets/images/featured_bssp_button.png"}
+  %h3 Featured Content
+  %hr
+  .program
+    %img{:src => "/assets/images/featured_beads_button.png"}
+    %img{:src => "/assets/images/featured_bssp_button.png"}
   %hr
   %h3 Like us on Facebook
   .row.fbbutton
@@ -13,9 +11,8 @@
       =render 'fbbutton'
   %hr
   %h3 Upcoming Events
-  .row.program
+  .program
     %img{:src => "http://placehold.it/259x150"}
-
   %hr
   %h3 Contact Us
   %address{:class => "vcard"}

@@ -156,6 +156,10 @@ p {
     }
     .program {
         text-align: center;
+        img {
+            margin-top: 8px;
+            margin-bottom:8px;
+        }
     }
     .fbbutton {
         text-align: left;
@@ -163,10 +167,6 @@ p {
     hr {
         margin-top: 8px;
         margin-bottom: 8px;
-    }
-    .program {
-        margin-top: 8px;
-        margin-bottom:8px;
     }
     address, p {
         font-style: normal;
