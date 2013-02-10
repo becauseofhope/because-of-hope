@@ -18,11 +18,6 @@ require 'zurb-foundation'
 
 # CSS/Foundation
 
-
-compile '/assets/stylesheets/*/' do
-    filter :sass, Compass.sass_engine_options
-end
-
 # Do not write partials
 route '/assets/stylesheets/_*/' do
     nil
@@ -32,8 +27,9 @@ route '/assets/stylesheets/*/' do
     item.identifier.chop + '.css'
 end
 
-# Javascript
-compile '/assets/javascript/*' do
+# Move image assets for Foundation Orbit to images so relative_paths work.
+route '/assets/images/foundation/orbit/*' do
+    item.identifier.gsub(/images/, 'stylesheets').chop + "." + item[:extension]
 end
 
 route '/assets/javascript/*' do
@@ -45,8 +41,21 @@ route '/static/*' do
   item.identifier[7..-2]
 end
 
-# Site Content Stuff
+route '*' do
+  if item.binary?
+    # Write item with identifier /foo/ to /foo.ext
+    item.identifier.chop + '.' + item[:extension]
+  else
+    # Write item with identifier /foo/ to /foo/index.html
+    item.identifier + 'index.html'
+  end
+end
 
+compile '/assets/stylesheets/*/' do
+    filter :sass, Compass.sass_engine_options
+end
+
+# Site Content Stuff
 compile '*' do
     if item.binary?
         # don’t filter binary items
@@ -58,16 +67,6 @@ compile '*' do
         end
         layout 'default'
     end
-end
-
-route '*' do
-  if item.binary?
-    # Write item with identifier /foo/ to /foo.ext
-    item.identifier.chop + '.' + item[:extension]
-  else
-    # Write item with identifier /foo/ to /foo/index.html
-    item.identifier + 'index.html'
-  end
 end
 
 layout '*', :haml
