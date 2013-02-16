@@ -27,3 +27,5 @@ gem 'haml'
 
 # Deployment to cloud
 gem 'fog'
+
+gem 'nanoc-image-compressor'

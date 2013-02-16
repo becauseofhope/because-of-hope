@@ -55,6 +55,12 @@ compile '/assets/stylesheets/*/' do
     filter :sass, Compass.sass_engine_options
 end
 
+compile '/assets/images/*/' do
+  if item.binary?
+    filter :image_compressor, :pngout => false
+  end
+end
+
 # Site Content Stuff
 compile '*' do
     if item.binary?

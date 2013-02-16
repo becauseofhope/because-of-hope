@@ -3,6 +3,8 @@
 
 # https://github.com/jingoro/nanoc-html5boilerplate/blob/master/lib/default.rb
 
+require 'nanoc/filters/image_compressor'
+
 unless defined? LOADED_DEFAULT_CONFIG
   LOADED_DEFAULT_CONFIG = true
 
