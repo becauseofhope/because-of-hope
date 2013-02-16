@@ -72,6 +72,12 @@ header {
         }
     }
     .nav ul {
+        li:last-child {
+            a {
+                padding-right: 0px;
+            }
+        }
+
         @media only screen and (min-width: 767px) {
             margin-bottom: 0;
             margin-top: 50px;
@@ -94,6 +100,11 @@ footer {
         }
     }
     .nav ul {
+        li:first-child {
+            a {
+                padding-left: 0px;
+            }
+        }
         @media only screen and (min-width: 767px) {
             margin-bottom: 0;
             margin-top: 0px;
@@ -149,7 +160,7 @@ p {
 .sidebar {
     color: #d6d3d2;
     background-color: gray;
-    padding: 22px;
+    padding: 10px;
     padding-bottom: 16px;
     @include background(linear-gradient(top, #474848, #585858));
     h1, h2, h3, h4, h5, h6 {
@@ -177,6 +188,9 @@ p {
         margin-bottom: 8px;
     }
     address, p {
+        width: 259px;
+        margin-left: auto;
+        margin-right: auto;
         font-style: normal;
     }
 
