@@ -1,42 +1,28 @@
 // You custom settings file to override Foundation defaults
 @import "settings";
-
 // Comment out this import if you are customizing you imports below
 @import "foundation";
-
 // ----------------------------------------
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing
-
 // @import "compass/css3";
 // @import "foundation/settings";
 // @import "foundation/functions/all";
-
 // Control which mixins you have access too
-
 // @import "foundation/mixins/clearfix";
 // @import "foundation/mixins/css-triangle";
 // @import "foundation/mixins/font-size";
-
 // Must include next two for semantic grid to work
-
 // @import "foundation/mixins/respond-to";
 // @import "foundation/mixins/semantic-grid";
-
 // @import "foundation/common/globals";
 // @import "modular-scale";
-
 // Must include the grid for any responsiveness
-
 // @import "foundation/components/grid";
-
 // Control which common styles get compiled
-
 // @import "foundation/common/typography";
 // @import "foundation/common/forms";
-
 // Control which components you get if customizing
-
 // @import "foundation/components/modules/buttons";
 // @import "foundation/components/modules/tabs";
 // @import "foundation/components/modules/ui";
@@ -45,12 +31,11 @@
 // @import "foundation/components/modules/orbit";
 // @import "foundation/components/modules/reveal";
 // @import "foundation/components/modules/offcanvas";
-
 @import "fonts";
 
 body {
     background-color: $backgroundColor;
-//    background: url("/assets/images/concrete_wall.png")
+    //    background: url("/assets/images/concrete_wall.png")
 }
 
 hr {
@@ -82,7 +67,7 @@ header {
             margin-bottom: 0;
             margin-top: 50px;
         }
-        @media only screen and (min-width: 767px) and (max-width:970px) {
+        @media only screen and (min-width: 767px) and (max-width: 970px) {
             margin-bottom: 0;
             margin-top: 0px;
         }
@@ -142,7 +127,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-
 p {
     line-height: 1.2;
 }
@@ -157,6 +141,7 @@ p {
         }
     }
 }
+
 .sidebar {
     color: #d6d3d2;
     background-color: gray;
@@ -168,7 +153,7 @@ p {
         text-align: center;
         margin-top: 0px;
         margin-bottom: 0px;
-        &:first-child{
+        &:first-child {
             margin-top: 0px;
             margin-bottom: -6px;
         }
@@ -177,7 +162,7 @@ p {
         text-align: center;
         img {
             margin-top: 8px;
-            margin-bottom:8px;
+            margin-bottom: 8px;
         }
     }
     .fbbutton {
@@ -208,7 +193,6 @@ p {
         }
     }
 }
-
 
 // Donate Page specific
 .donate-option {
@@ -245,6 +229,11 @@ p {
 }
 
 // Graceful Orbit Loading State
-#featured img { display: none; }
-#featured.orbit img { display: block; }
+#featured img {
+    display: none;
+}
+
+#featured.orbit img {
+    display: block;
+}
 
