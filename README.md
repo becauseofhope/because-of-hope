@@ -23,7 +23,7 @@ couch or nothing since Amazon waives all bills with less than 12¢ in them.
 
 For now, all artwork, text, and design that made by Because of Hope should be
 considered "All Rights Reserved". Everything else is under their original
-license. You are more than welcome to use them as reference for your own
+license or BSD. You are more than welcome to use them as reference for your own
 nanoc-powered site.
 
 ## Tools used
