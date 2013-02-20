@@ -85,12 +85,12 @@ footer {
         }
     }
     .nav ul {
-        li:first-child {
-            a {
-                padding-left: 0px;
-            }
-        }
         @media only screen and (min-width: 767px) {
+            li:first-child {
+                a {
+                    padding-left: 0px;
+                }
+            }
             margin-bottom: 0;
             margin-top: 0px;
         }
