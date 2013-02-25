@@ -46,8 +46,8 @@ GEM
     nanoc-image-compressor (0.1.1)
       image_optim
       nanoc (>= 3.3.1)
-    net-scp (1.0.6)
-      net-ssh (>= 2.6.5)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
     net-ssh (2.6.5)
     nokogiri (1.5.6)
     progress (2.4.0)
