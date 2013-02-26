@@ -41,7 +41,7 @@ GEM
       sass (>= 3.2.0)
       sassy-math (>= 1.5)
     multi_json (1.6.1)
-    nanoc (3.6.0)
+    nanoc (3.6.1)
       cri (~> 2.3)
     nanoc-image-compressor (0.1.1)
       image_optim
