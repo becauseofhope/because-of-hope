@@ -12,7 +12,7 @@ gem 'builder'
 gem 'nanoc'
 
 # Zurb Foundation
-gem "zurb-foundation", "~> 3.2.5"
+gem "zurb-foundation", "~> 4.0.2"
 
 # Compass
 gem 'compass'
