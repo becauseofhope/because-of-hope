@@ -80,4 +80,4 @@ DEPENDENCIES
   rack
   rack-rewrite
   sass
-  zurb-foundation
+  zurb-foundation (~> 3.2.5)
