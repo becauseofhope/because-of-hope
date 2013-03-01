@@ -1,5 +1,10 @@
 // You custom settings file to override Foundation defaults
 @import "settings";
+
+// Fill in for Foundation 4 missing compass
+@import "compass/css3/box-shadow";
+@import "compass/css3/images";
+
 // Comment out this import if you are customizing you imports below
 @import "foundation";
 // ----------------------------------------
