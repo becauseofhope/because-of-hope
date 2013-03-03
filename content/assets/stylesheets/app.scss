@@ -221,7 +221,7 @@ p {
         border: none;
         @include box-shadow(none);
         font-weight: normal;
-        font-family: $headerFontFamily;
+        font-family: $header-font-family;
         text-transform: uppercase;
         font-size: 44px;
         &:after {
