@@ -55,64 +55,64 @@ body {
 }
 
 hr {
-    border: 1px solid $white;
+    border: emCalc(1px) solid $white;
 }
 
 header, footer {
     hr {
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: emCalc(0px);
+        margin-bottom: emCalc(0px);
     }
 }
 
 header {
     .logo {
         img {
-            width: 152px;
-            height: 88px;
+            width: emCalc(152px);
+            height: emCalc(88px);
         }
     }
     .nav ul {
         li:last-child {
             a {
-                padding-right: 0px;
+                padding-right: emCalc(0px);
             }
         }
 
-        @media only screen and (min-width: 767px) {
+        @media only screen and (min-width: emCalc(767px)) {
             margin-bottom: 0;
-            margin-top: 50px;
+            margin-top: emCalc(50px);
         }
-        @media only screen and (min-width: 767px) and (max-width: 970px) {
+        @media only screen and (min-width: emCalc(767px)) and (max-width: emCalc(970px)) {
             margin-bottom: 0;
-            margin-top: 0px;
+            margin-top: emCalc(0px);
         }
     }
 }
 
 footer {
     hr {
-        height: 6px;
+        height: emCalc(6px);
         border: {
-            top-width: 1px;
-            bottom-width: 1px;
-            left-width: 0px;
-            right-width: 0px;
+            top-width: emCalc(1px);
+            bottom-width: emCalc(1px);
+            left-width: emCalc(0px);
+            right-width: emCalc(0px);
         }
     }
     .nav ul {
-        @media only screen and (min-width: 767px) {
+        @media only screen and (min-width: emCalc(767px)) {
             li:first-child {
                 a {
-                    padding-left: 0px;
+                    padding-left: emCalc(0px);
                 }
             }
             margin-bottom: 0;
-            margin-top: 0px;
+            margin-top: emCalc(0px);
         }
     }
     .social {
-        padding-top: 10px;
+        padding-top: emCalc(10px);
         li {
             float: right;
         }
@@ -122,7 +122,7 @@ footer {
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     color: #027d7d;
-    letter-spacing: 4px;
+    letter-spacing: emCalc(4px);
 }
 
 .nav {
@@ -139,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
             a {
                 color: $txtColor;
                 text-transform: lowercase;
-                letter-spacing: 2px;
+                letter-spacing: emCalc(2px);
                 &:hover {
                     color: white;
                     background-color: #5A3A51;
@@ -156,10 +156,10 @@ p {
 // Elements
 
 .banner {
-    @media only screen and (min-width: 1020px) {
+    @media only screen and (min-width: emCalc(1020px)) {
         img {
-            width: 1000px;
-            height: 200px;
+            width: emCalc(1000px);
+            height: emCalc(200px);
         }
     }
 }
@@ -167,41 +167,41 @@ p {
 .sidebar {
     color: #d6d3d2;
     background-color: gray;
-    padding: 10px;
-    padding-bottom: 16px;
+    padding: emCalc(10px);
+    padding-bottom: emCalc(16px);
     @include background(linear-gradient(top, #474848, #585858));
     h1, h2, h3, h4, h5, h6 {
         color: #a0c8bd;
         text-align: center;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: emCalc(0px);
+        margin-bottom: emCalc(0px);
         &:first-child {
-            margin-top: 0px;
-            margin-bottom: -6px;
+            margin-top: emCalc(0px);
+            margin-bottom: -emCalc(6px);
         }
     }
 
     h3 {
-        margin-bottom: 5px;
+        margin-bottom: emCalc(5px);
     }
 
     .program {
         text-align: center;
         img {
-            margin-top: 8px;
-            margin-bottom: 8px;
+            margin-top: emCalc(8px);
+            margin-bottom: emCalc(8px);
         }
     }
     .fbbutton {
-        padding: 5px;
+        padding: emCalc(5px);
         text-align: left;
     }
     hr {
-        margin-top: 8px;
-        margin-bottom: 8px;
+        margin-top: emCalc(8px);
+        margin-bottom: emCalc(8px);
     }
     address, p {
-        width: 259px;
+        width: emCalc(259px);
         margin-left: auto;
         margin-right: auto;
         font-style: normal;
@@ -213,11 +213,11 @@ p {
 
 .front-video {
     iframe {
-        @media only screen and (min-width: 767px) {
-            height: 505px;
+        @media only screen and (min-width: emCalc(767px)) {
+            height: emCalc(505px);
         }
-        @media only screen and (max-width: 767px) {
-            height: 250px;
+        @media only screen and (max-width: emCalc(767px)) {
+            height: emCalc(250px);
         }
     }
 }
@@ -228,29 +228,29 @@ p {
     }
     a.button {
         @extend .radius.button;
-        padding: 8px 45px 8px 8px;
+        padding: emCalc(8px) emCalc(45px) emCalc(8px) emCalc(8px);
         border: none;
         @include box-shadow(none);
         font-weight: normal;
         font-family: $header-font-family;
         text-transform: uppercase;
-        font-size: 44px;
+        font-size: emCalc(44px);
         &:after {
             content: ">";
-            padding: 6px 13px;
+            padding: emCalc(6px) emCalc(13px);
             color: $primary-color;
-            font-size: 30px;
+            font-size: emCalc(30px);
             vertical-align: middle;
             position: absolute;
             right: 0;
         }
         &:before {
             content: "\25CF";
-            width: 44px;
-            height: 44px;
-            font-size: 75px;
+            width: emCalc(44px);
+            height: emCalc(44px);
+            font-size: emCalc(75px);
             position: absolute;
-            top: -12px;
+            top: -emCalc(12px);
             right: 0;
         }
     }
