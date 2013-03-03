@@ -7,15 +7,15 @@
     .main
       - if @item[:header_img]
         .row
-          .twelve.columns.banner
+          .large-12.columns.banner
             %img{src:@item[:header_img]}
       - if @item[:sidebar] == false
         = yield
       - else
         .row
-          .eight.columns
+          .large-8.columns
             = yield
-          .four.columns
+          .large-4.columns
             = render 'sidebar'
     = render 'footer'
 
