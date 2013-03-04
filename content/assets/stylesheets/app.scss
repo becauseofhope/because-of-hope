@@ -122,7 +122,7 @@ footer {
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     color: #027d7d;
-    letter-spacing: emCalc(4px);
+    letter-spacing: 4px;
 }
 
 .nav {
@@ -228,29 +228,29 @@ p {
     }
     a.button {
         @extend .radius.button;
-        padding: emCalc(8px) emCalc(45px) emCalc(8px) emCalc(8px);
+        padding: 8px 45px 8px 8px;
         border: none;
         @include box-shadow(none);
         font-weight: normal;
         font-family: $header-font-family;
         text-transform: uppercase;
-        font-size: emCalc(44px);
+        font-size: 44px;
         &:after {
             content: ">";
-            padding: emCalc(6px) emCalc(13px);
+            padding: 6px 13px;
             color: $primary-color;
-            font-size: emCalc(30px);
+            font-size: 30px;
             vertical-align: middle;
             position: absolute;
             right: 0;
         }
         &:before {
             content: "\25CF";
-            width: emCalc(44px);
-            height: emCalc(44px);
-            font-size: emCalc(75px);
+            width: 44px;
+            height: 44px;
+            font-size: 75px;
             position: absolute;
-            top: -emCalc(12px);
+            top: -12px;
             right: 0;
         }
     }
