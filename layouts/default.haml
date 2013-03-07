@@ -9,7 +9,7 @@
         .row
           .large-12.columns.banner
             %img{src:@item[:header_img]}
-      - if @item[:sidebar] == false
+      - if !@item[:sidebar]
         = yield
       - else
         .row
