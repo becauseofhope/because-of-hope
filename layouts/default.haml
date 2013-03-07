@@ -18,6 +18,11 @@
           .large-4.columns
             = render 'sidebar'
     = render 'footer'
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+    %script{:src => "/assets/javascripts/foundation/foundation.js"}
+    - %w{alerts clearing cookie dropdown forms joyride magellan orbit placeholder reveal section tooltips topbar}.map do |js|
+      %script{:src => "/assets/javascripts/foundation/foundation.#{js}.js"}
 
-    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"}
+
+
 
