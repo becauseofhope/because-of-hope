@@ -9,19 +9,20 @@
   %body
     = render 'fbjsdk'
     = render 'header'
-    %article
-      - if @item[:header_img]
-        .row
-          .large-12.columns.banner
-            %img{src:@item[:header_img]}
-      - if !@item[:sidebar]
-        = yield
-      - else
-        .row
-          .large-8.columns
-            = yield
-          .large-4.columns
-            = render 'sidebar'
+    .row
+      %article
+        - if @item[:header_img]
+          .row
+            .large-12.columns.banner
+              %img{src:@item[:header_img]}
+        - if !@item[:sidebar]
+          = yield
+        - else
+          .row
+            .large-8.columns
+              = yield
+            .large-4.columns
+              = render 'sidebar'
     = render 'footer'
     %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
     %script{:src => "/assets/javascripts/foundation/foundation.js"}
