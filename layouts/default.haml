@@ -9,20 +9,17 @@
   %body
     = render 'fbjsdk'
     = render 'header'
-    .row
-      %article
-        - if @item[:header_img]
-          .row
-            .large-12.columns.banner
-              %img{src:@item[:header_img]}
-        - if !@item[:sidebar]
+    %article
+      - if @item[:header_img]
+        %header
+          %img{src:@item[:header_img]}
+      - if @item[:sidebar] == false
+        = yield
+      - else
+        #content
           = yield
-        - else
-          .row
-            .large-8.columns
-              = yield
-            .large-4.columns
-              = render 'sidebar'
+        %aside
+          = render 'sidebar'
     = render 'footer'
     %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
     %script{:src => "/assets/javascripts/foundation/foundation.js"}
