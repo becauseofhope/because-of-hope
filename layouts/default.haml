@@ -1,10 +1,15 @@
 !!! 5
 %html
-  = render 'head'
+  %head
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+    %title= "BOH - #{item[:title]}"
+    %link{:href => "/assets/stylesheets/normalize.css", :rel => "stylesheet"}
+    %link{:href => "/assets/stylesheets/app.css", :rel => "stylesheet"}
+    %script{:src => "/assets/javascripts/vendor/custom.modernizr.js"}
   %body
     = render 'fbjsdk'
     = render 'header'
-    .main
+    %article
       - if @item[:header_img]
         .row
           .large-12.columns.banner
