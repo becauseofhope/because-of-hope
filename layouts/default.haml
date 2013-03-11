@@ -17,10 +17,12 @@
         #content
           = yield
       - else
+        %aside
+        #sidebar
+          = render 'sidebar'
         #content
           = yield
-        %aside
-          = render 'sidebar'
+
     = render 'footer'
     %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
     %script{:src => "/assets/javascripts/foundation/foundation.js"}
