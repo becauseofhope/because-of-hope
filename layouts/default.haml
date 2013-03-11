@@ -14,7 +14,8 @@
         %header
           %img{src:@item[:header_img]}
       - if @item[:sidebar] == false
-        = yield
+        #content
+          = yield
       - else
         #content
           = yield
