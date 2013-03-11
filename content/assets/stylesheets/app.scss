@@ -77,7 +77,7 @@ header {
         @include grid-column(12);
         @media #{$small} {
             section.top-bar-section.overhang-right {
-                left: 20px !important;
+                left: 26.375px !important;
             }
             .top-bar-section li a:not(.button) {
                 color: $txtColor;
