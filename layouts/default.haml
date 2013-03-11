@@ -13,15 +13,16 @@
       - if @item[:header_img]
         %header
           %img{src:@item[:header_img]}
-      .row
-        - if @item[:sidebar] == false
+      - if @item[:sidebar] == false
+        .spread
           #content
             = yield
-        - else
+      - else
+        .info
+          #content
+            = yield
           %aside
             = render 'sidebar'
-          #content
-            = yield
     = render 'footer'
     %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
     %script{:src => "/assets/javascripts/foundation/foundation.js"}

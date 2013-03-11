@@ -156,23 +156,32 @@ p {
 // Elements
 
 article {
-    @include grid-row(nest);
+    @include grid-row();
     & > header {
         @include grid-row();
         & > img {
             @include grid-column(12);
         }
     }
-    #content {
-        @include grid-column(12);
-    }
-    aside {
-        @include grid-column(4, $float: right);
-        & ~ #content {
-            @include grid-column(8, $float: left);
+
+    & > .info {
+        @include grid-row();
+        & > #content {
+            @include grid-column(12);
+            @media #{$small} {
+                @include grid-column(8, $float: left);
+            }
+        }
+        & > aside {
+            @include grid-column(12);
+            @media #{$small} {
+                @include grid-column(4, $float: left);
+            }
         }
     }
 }
+
+
 .banner {
     @media only screen and (min-width: emCalc(1020px)) {
         img {
