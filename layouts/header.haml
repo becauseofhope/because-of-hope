@@ -1,20 +1,31 @@
 %header
-  %a.logo{:href => "/"}
-    %img{:src => "/assets/images/logo.png"}
-  %nav
-    %ul
-      %li
-        %a{:href => "/"} Programs
-      %li
-        %a{:href => "/aboutus/"} About Us
-      %li
-        %a{:href => "/"} Get Involved
-      %li
-        %a{:href => "http://becauseofhope.tumblr.com/tagged/blog"} Blog
-      %li
-        %a{:href => "http://bohshop.bigcartel.com/"} Shop
-      %li
-        %a{:href => "/donate/"} Donate
+  %nav.top-bar
+    %ul.title-area
+      %li.name
+        %a.logo{:href => "/"}
+          %img{:src => "/assets/images/logo.png"}
+      %li.toggle-topbar.menu-icon
+        %a{href:'#'}
+          %span Menu
+
+  -#
+  -#
+  -#%a.logo{:href => "/"}
+  -#  %img{:src => "/assets/images/logo.png"}
+  -#%nav
+  -#  %ul
+  -#    %li
+  -#      %a{:href => "/"} Programs
+  -#    %li
+  -#      %a{:href => "/aboutus/"} About Us
+  -#    %li
+  -#      %a{:href => "/"} Get Involved
+  -#    %li
+  -#      %a{:href => "http://becauseofhope.tumblr.com/tagged/blog"} Blog
+  -#    %li
+  -#      %a{:href => "http://bohshop.bigcartel.com/"} Shop
+  -#    %li
+  -#      %a{:href => "/donate/"} Donate
   .row
     .large-12.columns.header-line
       %hr
