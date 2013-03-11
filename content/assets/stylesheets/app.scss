@@ -68,26 +68,28 @@ header, footer {
 header {
     @include grid-row();
     .logo {
-        @include grid-column(3, $float:left);
+        @media #{$small} {
+            @include grid-column(3, $float: left);
+        }
         img {
             width: emCalc(152px);
             height: emCalc(88px);
         }
     }
-    .nav ul {
-        li:last-child {
-            a {
-                padding-right: emCalc(0px);
+    nav {
+        @media #{$small} {
+            @include grid-column(9, $float: left);
+        }
+        & > ul {
+            float: right;
+            @include button-group-container();
+            & > li {
+                @include button-group-style();
+                & > a {
+                    @include button();
+                }
             }
-        }
 
-        @media only screen and (min-width: emCalc(767px)) {
-            margin-bottom: 0;
-            margin-top: emCalc(50px);
-        }
-        @media only screen and (min-width: emCalc(767px)) and (max-width: emCalc(970px)) {
-            margin-bottom: 0;
-            margin-top: emCalc(0px);
         }
     }
 }
