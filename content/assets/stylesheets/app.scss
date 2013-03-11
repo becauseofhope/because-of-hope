@@ -183,6 +183,13 @@ article {
             }
         }
     }
+
+    & > .spread {
+        @include grid-row();
+        & > #content {
+            @include grid-column(12);
+        }
+    }
 }
 
 .sidebar {
