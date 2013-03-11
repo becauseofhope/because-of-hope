@@ -67,10 +67,12 @@ header, footer {
 
 header {
     @include grid-row();
-    //.logo, .logo img {
-    //    width: emCalc(152px);
-    //    height: emCalc(88px);
-    //}
+    .logo {
+        display: block;
+        padding: 0;
+        width: emCalc(152px);
+        height: emCalc(88px);
+    }
     nav.top-bar {
         @include grid-column(12);
     }
