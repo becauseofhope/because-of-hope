@@ -75,6 +75,12 @@ header {
     }
     nav.top-bar {
         @include grid-column(12);
+        @media #{$small} {
+            .top-bar-section li a:not(.button) {
+                line-height: 2.625em;
+                padding-top: 54px;
+            }
+        }
     }
 }
 
