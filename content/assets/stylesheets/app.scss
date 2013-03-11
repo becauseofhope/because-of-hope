@@ -77,8 +77,16 @@ header {
         @include grid-column(12);
         @media #{$small} {
             .top-bar-section li a:not(.button) {
+                color: $txtColor;
+                text-transform: lowercase;
+                letter-spacing: 2px;
                 line-height: 2.625em;
                 padding-top: 54px;
+                font-weight: normal;
+                &:hover {
+                    color: white;
+                    background-color: #5A3A51;
+                }
             }
         }
     }
