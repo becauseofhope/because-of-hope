@@ -157,33 +157,23 @@ p {
 
 article {
     @include grid-row;
-}
-
-article > header {
-    @include grid-row();
-    & > img {
+    & > header {
+        @include grid-row();
+        & > img {
+            @include grid-column(12);
+        }
+    }
+    @include grid-row(nest);
+    #content {
         @include grid-column(12);
     }
-}
-
-article > .container {
-    @include grid-row(nest);
-}
-
-article #content {
-    @include grid-column(12);
-}
-
-article aside {
-    @include grid-column(4, $float: right);
-    .sidebar {
+    aside {
+        @include grid-column(4, $float: right);
+        & ~ #content {
+            @include grid-column(8, $float: left);
+        }
     }
 }
-
-article aside ~ #content {
-    @include grid-column(8, $float: left);
-}
-
 .banner {
     @media only screen and (min-width: emCalc(1020px)) {
         img {
