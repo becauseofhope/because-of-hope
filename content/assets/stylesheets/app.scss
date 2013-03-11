@@ -76,6 +76,10 @@ header {
     nav.top-bar {
         @include grid-column(12);
         @media #{$small} {
+            section.top-bar-section.overhang-right {
+                position: absolute;
+                right: -10px;
+            }
             .top-bar-section li a:not(.button) {
                 color: $txtColor;
                 text-transform: lowercase;
