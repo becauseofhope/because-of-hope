@@ -124,32 +124,6 @@ footer {
     }
 }
 
-
-
-.nav {
-    ul {
-        background-color: transparent;
-        li {
-            &:hover {
-                background-color: transparent;
-            }
-            &, &:last-child {
-                @include box-shadow(none);
-                border: none;
-            }
-            a {
-                color: $txtColor;
-                text-transform: lowercase;
-                letter-spacing: emCalc(2px);
-                &:hover {
-                    color: white;
-                    background-color: #5A3A51;
-                }
-            }
-        }
-    }
-}
-
 p {
     line-height: 1.2;
 }
