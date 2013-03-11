@@ -161,6 +161,10 @@ article {
         @include grid-row();
         & > img {
             @include grid-column(12);
+            @media only screen and (min-width: emCalc(1020px)) {
+                width: emCalc(1000px);
+                height: emCalc(200px);
+            }
         }
     }
 
@@ -183,12 +187,7 @@ article {
 
 
 .banner {
-    @media only screen and (min-width: emCalc(1020px)) {
-        img {
-            width: emCalc(1000px);
-            height: emCalc(200px);
-        }
-    }
+
 }
 
 .sidebar {
