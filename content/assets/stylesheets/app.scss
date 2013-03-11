@@ -156,14 +156,13 @@ p {
 // Elements
 
 article {
-    @include grid-row;
+    @include grid-row(nest);
     & > header {
         @include grid-row();
         & > img {
             @include grid-column(12);
         }
     }
-    @include grid-row(nest);
     #content {
         @include grid-column(12);
     }
