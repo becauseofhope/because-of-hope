@@ -952,7 +952,7 @@ $button-font-color: $txtColor;
 //
 
 // Background color for the top bar
-// $topbar-bg: #111;
+$topbar-bg: $backgroundColor;
 
 // Height and margin
 $topbar-height: emCalc(90px);
