@@ -66,7 +66,9 @@ header, footer {
 }
 
 header {
+    @include grid-row();
     .logo {
+        @include grid-column(3, $float:left);
         img {
             width: emCalc(152px);
             height: emCalc(88px);
