@@ -77,7 +77,7 @@ header {
         @include grid-column(12);
         @media #{$small} {
             section.top-bar-section.overhang-right {
-                left: 17.375px !important;
+                left: 0.9375em !important;
             }
             .top-bar-section li a:not(.button) {
                 color: $txtColor;
@@ -85,8 +85,8 @@ header {
                 letter-spacing: 2px;
                 line-height: 2.625em;
                 padding-top: 54px;
-                padding-left: 1.4em;
-                padding-right: 1.4em;
+                padding-left: 0.9375em;
+                padding-right: 0.9375em;
                 font-weight: normal;
                 &:hover {
                     color: white;
