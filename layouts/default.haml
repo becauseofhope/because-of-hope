@@ -1,21 +1,36 @@
 !!! 5
 %html
-  = render 'head'
+  %head
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+    %title= "BOH - #{item[:title]}"
+    %link{:href => "/assets/stylesheets/normalize.css", :rel => "stylesheet"}
+    %link{:href => "/assets/stylesheets/app.css", :rel => "stylesheet"}
+    %script{:src => "/assets/javascripts/vendor/custom.modernizr.js"}
   %body
     = render 'fbjsdk'
     = render 'header'
-    .main
+    %article
       - if @item[:header_img]
-        .row
-          .twelve.columns.banner
-            %img{src:@item[:header_img]}
+        %header
+          %img{src:@item[:header_img]}
       - if @item[:sidebar] == false
-        = yield
-      - else
-        .row
-          .eight.columns
+        .spread
+          #content
             = yield
-          .four.columns
+      - else
+        .info
+          #content
+            = yield
+          %aside
             = render 'sidebar'
     = render 'footer'
+    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
+    %script{:src => "/assets/javascripts/foundation/foundation.js"}
+    - %w{alerts clearing cookie dropdown forms joyride magellan orbit placeholder reveal section tooltips topbar}.map do |js|
+      %script{:src => "/assets/javascripts/foundation/foundation.#{js}.js"}
+    %script $(document).foundation();
+
+
+
+
 

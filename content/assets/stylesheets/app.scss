@@ -1,36 +1,52 @@
-// You custom settings file to override Foundation defaults
+// Global Foundation Settings
 @import "settings";
+
 // Comment out this import if you are customizing you imports below
 @import "foundation";
-// ----------------------------------------
+
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing
-// @import "compass/css3";
-// @import "foundation/settings";
-// @import "foundation/functions/all";
-// Control which mixins you have access too
-// @import "foundation/mixins/clearfix";
-// @import "foundation/mixins/css-triangle";
-// @import "foundation/mixins/font-size";
-// Must include next two for semantic grid to work
-// @import "foundation/mixins/respond-to";
-// @import "foundation/mixins/semantic-grid";
-// @import "foundation/common/globals";
-// @import "modular-scale";
-// Must include the grid for any responsiveness
+
+// @import "foundation/foundation-global";
 // @import "foundation/components/grid";
-// Control which common styles get compiled
-// @import "foundation/common/typography";
-// @import "foundation/common/forms";
-// Control which components you get if customizing
-// @import "foundation/components/modules/buttons";
-// @import "foundation/components/modules/tabs";
-// @import "foundation/components/modules/ui";
-// @import "foundation/components/modules/topbar";
-// @import "foundation/components/modules/navbar";
-// @import "foundation/components/modules/orbit";
-// @import "foundation/components/modules/reveal";
-// @import "foundation/components/modules/offcanvas";
+// @import "foundation/components/visibility";
+// @import "foundation/components/block-grid";
+// @import "foundation/components/type";
+// @import "foundation/components/buttons";
+// @import "foundation/components/forms";
+// @import "foundation/components/custom-forms";
+// @import "foundation/components/button-groups";
+// @import "foundation/components/dropdown-buttons";
+// @import "foundation/components/split-buttons";
+// @import "foundation/components/flex-video";
+// @import "foundation/components/section";
+// @import "foundation/components/top-bar";
+// @import "foundation/components/orbit";
+// @import "foundation/components/reveal";
+// @import "foundation/components/joyride";
+// @import "foundation/components/clearing";
+// @import "foundation/components/alert-boxes";
+// @import "foundation/components/breadcrumbs";
+// @import "foundation/components/keystrokes";
+// @import "foundation/components/labels";
+// @import "foundation/components/inline-lists";
+// @import "foundation/components/pagination";
+// @import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+// @import "foundation/components/progress-bars";
+// @import "foundation/components/side-nav";
+// @import "foundation/components/sub-nav";
+// @import "foundation/components/switch";
+// @import "foundation/components/magellan";
+// @import "foundation/components/tables";
+// @import "foundation/components/thumbs";
+// @import "foundation/components/tooltips";
+// @import "foundation/components/dropdown";
+
+// Fill in for Foundation 4 missing compass
+@import "compass/css3/box-shadow";
+@import "compass/css3/images";
+
 @import "fonts";
 
 body {
@@ -39,96 +55,73 @@ body {
 }
 
 hr {
-    border: 1px solid $white;
+    border: emCalc(1px) solid $white;
 }
 
 header, footer {
     hr {
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: emCalc(0px);
+        margin-bottom: emCalc(0px);
     }
 }
 
 header {
+    @include grid-row();
     .logo {
-        img {
-            width: 152px;
-            height: 88px;
-        }
+        display: block;
+        padding: 0;
+        width: emCalc(152px);
+        height: emCalc(88px);
     }
-    .nav ul {
-        li:last-child {
-            a {
-                padding-right: 0px;
+    nav.top-bar {
+        @include grid-column(12);
+        @media #{$small} {
+            section.top-bar-section.overhang-right {
+                left: 0.9375em !important;
             }
-        }
-
-        @media only screen and (min-width: 767px) {
-            margin-bottom: 0;
-            margin-top: 50px;
-        }
-        @media only screen and (min-width: 767px) and (max-width: 970px) {
-            margin-bottom: 0;
-            margin-top: 0px;
+            .top-bar-section li a:not(.button) {
+                color: $txtColor;
+                text-transform: lowercase;
+                letter-spacing: 2px;
+                line-height: 2.625em;
+                padding-top: 54px;
+                padding-left: 0.9375em;
+                padding-right: 0.9375em;
+                font-weight: normal;
+                &:hover {
+                    color: white;
+                    background-color: #5A3A51;
+                }
+            }
         }
     }
 }
 
 footer {
     hr {
-        height: 6px;
+        height: emCalc(6px);
         border: {
-            top-width: 1px;
-            bottom-width: 1px;
-            left-width: 0px;
-            right-width: 0px;
+            top-width: emCalc(1px);
+            bottom-width: emCalc(1px);
+            left-width: emCalc(0px);
+            right-width: emCalc(0px);
         }
     }
     .nav ul {
-        @media only screen and (min-width: 767px) {
+        @media only screen and (min-width: emCalc(767px)) {
             li:first-child {
                 a {
-                    padding-left: 0px;
+                    padding-left: emCalc(0px);
                 }
             }
             margin-bottom: 0;
-            margin-top: 0px;
+            margin-top: emCalc(0px);
         }
     }
     .social {
-        padding-top: 10px;
+        padding-top: emCalc(10px);
         li {
             float: right;
-        }
-    }
-}
-
-h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
-    color: #027d7d;
-    letter-spacing: 2px;
-}
-
-.nav {
-    ul {
-        background-color: transparent;
-        li {
-            &:hover {
-                background-color: transparent;
-            }
-            &, &:last-child {
-                @include box-shadow(none);
-                border: none;
-            }
-            a {
-                color: $txtColor;
-                text-transform: lowercase;
-                letter-spacing: 2px;
-                &:hover {
-                    color: white;
-                    background-color: #5A3A51;
-                }
-            }
         }
     }
 }
@@ -139,11 +132,45 @@ p {
 
 // Elements
 
-.banner {
-    @media only screen and (min-width: 1020px) {
-        img {
-            width: 1000px;
-            height: 200px;
+article {
+    @include grid-row();
+    h1, h2, h3, h4, h5, h6 {
+        text-transform: uppercase;
+        color: #027d7d;
+        letter-spacing: 4px;
+    }
+
+    & > header {
+        @include grid-row();
+        & > img {
+            @include grid-column(12);
+            @media only screen and (min-width: emCalc(1020px)) {
+                width: emCalc(1000px);
+                height: emCalc(200px);
+            }
+        }
+    }
+
+    & > .info {
+        @include grid-row();
+        & > #content {
+            @include grid-column(12);
+            @media #{$small} {
+                @include grid-column(8, $float: left);
+            }
+        }
+        & > aside {
+            @include grid-column(12);
+            @media #{$small} {
+                @include grid-column(4, $float: left);
+            }
+        }
+    }
+
+    & > .spread {
+        @include grid-row();
+        & > #content {
+            @include grid-column(12);
         }
     }
 }
@@ -151,41 +178,41 @@ p {
 .sidebar {
     color: #d6d3d2;
     background-color: gray;
-    padding: 10px;
-    padding-bottom: 16px;
+    padding: emCalc(10px);
+    padding-bottom: emCalc(16px);
     @include background(linear-gradient(top, #474848, #585858));
     h1, h2, h3, h4, h5, h6 {
         color: #a0c8bd;
         text-align: center;
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: emCalc(0px);
+        margin-bottom: emCalc(0px);
         &:first-child {
-            margin-top: 0px;
-            margin-bottom: -6px;
+            margin-top: emCalc(0px);
+            margin-bottom: -emCalc(6px);
         }
     }
 
     h3 {
-        margin-bottom: 5px;
+        margin-bottom: emCalc(5px);
     }
 
     .program {
         text-align: center;
         img {
-            margin-top: 8px;
-            margin-bottom: 8px;
+            margin-top: emCalc(8px);
+            margin-bottom: emCalc(8px);
         }
     }
     .fbbutton {
-        padding: 5px;
+        padding: emCalc(5px);
         text-align: left;
     }
     hr {
-        margin-top: 8px;
-        margin-bottom: 8px;
+        margin-top: emCalc(8px);
+        margin-bottom: emCalc(8px);
     }
     address, p {
-        width: 259px;
+        width: emCalc(259px);
         margin-left: auto;
         margin-right: auto;
         font-style: normal;
@@ -197,11 +224,11 @@ p {
 
 .front-video {
     iframe {
-        @media only screen and (min-width: 767px) {
-            height: 505px;
+        @media only screen and (min-width: emCalc(767px)) {
+            height: emCalc(505px);
         }
-        @media only screen and (max-width: 767px) {
-            height: 250px;
+        @media only screen and (max-width: emCalc(767px)) {
+            height: emCalc(250px);
         }
     }
 }
@@ -210,19 +237,20 @@ p {
 .donate-option {
     img {
     }
+    font-size: 14px;
     a.button {
         @extend .radius.button;
         padding: 8px 45px 8px 8px;
         border: none;
         @include box-shadow(none);
         font-weight: normal;
-        font-family: $headerFontFamily;
+        font-family: $header-font-family;
         text-transform: uppercase;
         font-size: 44px;
         &:after {
             content: ">";
             padding: 6px 13px;
-            color: $mainColor;
+            color: $primary-color;
             font-size: 30px;
             vertical-align: middle;
             position: absolute;
