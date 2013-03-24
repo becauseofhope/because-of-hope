@@ -3,6 +3,10 @@
 # Default location for output, needs to match output_dir's value found in config.yaml
 output/
 
+# I am not sure what is making this directory and I don't really care right
+# now.
+out/
+
 # Temporary file directory
 tmp/
 
