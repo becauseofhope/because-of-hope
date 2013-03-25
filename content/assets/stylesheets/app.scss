@@ -99,7 +99,7 @@ header {
 }
 
 footer {
-    hr {
+  hr {
         height: emCalc(6px);
         border: {
             top-width: emCalc(1px);
@@ -108,23 +108,27 @@ footer {
             right-width: emCalc(0px);
         }
     }
-    .nav ul {
-        @media only screen and (min-width: emCalc(767px)) {
-            li:first-child {
-                a {
-                    padding-left: emCalc(0px);
-                }
-            }
-            margin-bottom: 0;
-            margin-top: emCalc(0px);
+  nav {
+    padding-top: emCalc(10px);
+    @include grid-row();
+    .links {
+      @include grid-column(9);
+      ul {
+        @include inline-list;
+        li {
+          a {
+            color: $txtColor;
+          }
         }
+      }
     }
     .social {
-        padding-top: emCalc(10px);
-        li {
-            float: right;
+      @include grid-column(3);
+        ul {
+          @include inline-list;
         }
     }
+  }
 }
 
 p {
