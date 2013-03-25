@@ -1,12 +1,9 @@
 // Global Foundation Settings
 @import "settings";
-
 // Comment out this import if you are customizing you imports below
 @import "foundation";
-
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing
-
 // @import "foundation/foundation-global"; // *always required
 // @import "foundation/components/global"; // *always required
 // @import "foundation/components/grid";
@@ -43,71 +40,69 @@
 // @import "foundation/components/thumbs";
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
-
 // Fill in for Foundation 4 missing compass
 @import "compass/css3/box-shadow";
 @import "compass/css3/images";
-
 @import "fonts";
 
 body {
-    background-color: $backgroundColor;
-    //    background: url("/assets/images/concrete_wall.png")
+  background-color: $backgroundColor;
+  //    background: url("/assets/images/concrete_wall.png")
 }
 
 hr {
-    border: emCalc(1px) solid $white;
+  border: emCalc(1px) solid $white;
 }
 
 header, footer {
-    hr {
-        margin-top: emCalc(0px);
-        margin-bottom: emCalc(0px);
-    }
+  hr {
+    margin-top: emCalc(0px);
+    margin-bottom: emCalc(0px);
+  }
 }
 
 header {
-    @include grid-row();
-    .logo {
-        display: block;
-        padding: 0;
-        width: emCalc(152px);
-        height: emCalc(88px);
-    }
-    nav.top-bar {
-        @include grid-column(12);
-        @media #{$small} {
-            section.top-bar-section.overhang-right {
-                left: 0.9375em !important;
-            }
-            .top-bar-section li a:not(.button) {
-                color: $txtColor;
-                text-transform: lowercase;
-                letter-spacing: 2px;
-                line-height: 2.625em;
-                padding-top: 54px;
-                padding-left: 0.9375em;
-                padding-right: 0.9375em;
-                font-weight: normal;
-                &:hover {
-                    color: white;
-                    background-color: #5A3A51;
-                }
-            }
+  @include grid-row();
+  .logo {
+    display: block;
+    padding: 0;
+    width: emCalc(152px);
+    height: emCalc(88px);
+  }
+  nav.top-bar {
+    @include grid-column(12);
+    @media #{$small} {
+      section.top-bar-section.overhang-right {
+        left: 0.9375em !important;
+      }
+      .top-bar-section li a:not(.button) {
+        color: $txtColor;
+        text-transform: lowercase;
+        letter-spacing: 2px;
+        line-height: 2.625em;
+        padding-top: 54px;
+        padding-left: 0.9375em;
+        padding-right: 0.9375em;
+        font-weight: normal;
+        &:hover {
+          color: white;
+          background-color: #5A3A51;
         }
+      }
     }
+  }
 }
 
 footer {
   hr {
-        height: emCalc(6px);
-        border: {
-            top-width: emCalc(1px);
-            bottom-width: emCalc(1px);
-            left-width: emCalc(0px);
-            right-width: emCalc(0px);
-        }
+    height: emCalc(6px);
+    border: {
+      top-width: emCalc(1px);
+      bottom-width: emCalc(1px);
+      left-width: emCalc(0px);
+      right-width: emCalc(0px);
     }
+  }
   nav {
     padding-top: emCalc(10px);
     @include grid-row();
@@ -124,161 +119,161 @@ footer {
     }
     .social {
       @include grid-column(3);
-        ul {
-          @include inline-list;
-        }
+      ul {
+        @include inline-list;
+      }
     }
   }
 }
 
 p {
-    line-height: 1.2;
+  line-height: 1.2;
 }
 
 // Elements
 
 article {
+  @include grid-row();
+  h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    color: #027d7d;
+    letter-spacing: 4px;
+  }
+
+  & > header {
     @include grid-row();
-    h1, h2, h3, h4, h5, h6 {
-        text-transform: uppercase;
-        color: #027d7d;
-        letter-spacing: 4px;
+    & > img {
+      @include grid-column(12);
+      @media only screen and (min-width: emCalc(1020px)) {
+        width: emCalc(1000px);
+        height: emCalc(200px);
+      }
     }
+  }
 
-    & > header {
-        @include grid-row();
-        & > img {
-            @include grid-column(12);
-            @media only screen and (min-width: emCalc(1020px)) {
-                width: emCalc(1000px);
-                height: emCalc(200px);
-            }
-        }
+  & > .info {
+    @include grid-row();
+    & > #content {
+      @include grid-column(12);
+      @media #{$small} {
+        @include grid-column(8, $float: left);
+      }
     }
+    & > aside {
+      @include grid-column(12);
+      @media #{$small} {
+        @include grid-column(4, $float: left);
+      }
+    }
+  }
 
-    & > .info {
-        @include grid-row();
-        & > #content {
-            @include grid-column(12);
-            @media #{$small} {
-                @include grid-column(8, $float: left);
-            }
-        }
-        & > aside {
-            @include grid-column(12);
-            @media #{$small} {
-                @include grid-column(4, $float: left);
-            }
-        }
+  & > .spread {
+    @include grid-row();
+    & > #content {
+      @include grid-column(12);
     }
-
-    & > .spread {
-        @include grid-row();
-        & > #content {
-            @include grid-column(12);
-        }
-    }
+  }
 }
 
 .sidebar {
-    color: #d6d3d2;
-    background-color: gray;
-    padding: emCalc(10px);
-    padding-bottom: emCalc(16px);
-    @include background(linear-gradient(top, #474848, #585858));
-    h1, h2, h3, h4, h5, h6 {
-        color: #a0c8bd;
-        text-align: center;
-        margin-top: emCalc(0px);
-        margin-bottom: emCalc(0px);
-        &:first-child {
-            margin-top: emCalc(0px);
-            margin-bottom: -emCalc(6px);
-        }
+  color: #d6d3d2;
+  background-color: gray;
+  padding: emCalc(10px);
+  padding-bottom: emCalc(16px);
+  @include background(linear-gradient(top, #474848, #585858));
+  h1, h2, h3, h4, h5, h6 {
+    color: #a0c8bd;
+    text-align: center;
+    margin-top: emCalc(0px);
+    margin-bottom: emCalc(0px);
+    &:first-child {
+      margin-top: emCalc(0px);
+      margin-bottom: -emCalc(6px);
     }
+  }
 
-    h3 {
-        margin-bottom: emCalc(5px);
-    }
+  h3 {
+    margin-bottom: emCalc(5px);
+  }
 
-    .program {
-        text-align: center;
-        img {
-            margin-top: emCalc(8px);
-            margin-bottom: emCalc(8px);
-        }
+  .program {
+    text-align: center;
+    img {
+      margin-top: emCalc(8px);
+      margin-bottom: emCalc(8px);
     }
-    .fbbutton {
-        padding: emCalc(5px);
-        text-align: left;
-    }
-    hr {
-        margin-top: emCalc(8px);
-        margin-bottom: emCalc(8px);
-    }
-    address, p {
-        width: emCalc(259px);
-        margin-left: auto;
-        margin-right: auto;
-        font-style: normal;
-    }
+  }
+  .fbbutton {
+    padding: emCalc(5px);
+    text-align: left;
+  }
+  hr {
+    margin-top: emCalc(8px);
+    margin-bottom: emCalc(8px);
+  }
+  address, p {
+    width: emCalc(259px);
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+  }
 
 }
 
 // Front Page specific
 
 .front-video {
-    iframe {
-        @media only screen and (min-width: emCalc(767px)) {
-            height: emCalc(505px);
-        }
-        @media only screen and (max-width: emCalc(767px)) {
-            height: emCalc(250px);
-        }
+  iframe {
+    @media only screen and (min-width: emCalc(767px)) {
+      height: emCalc(505px);
     }
+    @media only screen and (max-width: emCalc(767px)) {
+      height: emCalc(250px);
+    }
+  }
 }
 
 // Donate Page specific
 .donate-option {
-    img {
+  img {
+  }
+  font-size: 14px;
+  a.button {
+    @extend .radius.button;
+    padding: 8px 45px 8px 8px;
+    border: none;
+    @include box-shadow(none);
+    font-weight: normal;
+    font-family: $header-font-family;
+    text-transform: uppercase;
+    font-size: 44px;
+    &:after {
+      content: ">";
+      padding: 6px 13px;
+      color: $primary-color;
+      font-size: 30px;
+      vertical-align: middle;
+      position: absolute;
+      right: 0;
     }
-    font-size: 14px;
-    a.button {
-        @extend .radius.button;
-        padding: 8px 45px 8px 8px;
-        border: none;
-        @include box-shadow(none);
-        font-weight: normal;
-        font-family: $header-font-family;
-        text-transform: uppercase;
-        font-size: 44px;
-        &:after {
-            content: ">";
-            padding: 6px 13px;
-            color: $primary-color;
-            font-size: 30px;
-            vertical-align: middle;
-            position: absolute;
-            right: 0;
-        }
-        &:before {
-            content: "\25CF";
-            width: 44px;
-            height: 44px;
-            font-size: 75px;
-            position: absolute;
-            top: -12px;
-            right: 0;
-        }
+    &:before {
+      content: "\25CF";
+      width: 44px;
+      height: 44px;
+      font-size: 75px;
+      position: absolute;
+      top: -12px;
+      right: 0;
     }
+  }
 }
 
 // Graceful Orbit Loading State
 #featured img {
-    display: none;
+  display: none;
 }
 
 #featured.orbit img {
-    display: block;
+  display: block;
 }
 
