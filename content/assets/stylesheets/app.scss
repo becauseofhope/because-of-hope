@@ -211,11 +211,13 @@ article {
     margin-top: emCalc(8px);
     margin-bottom: emCalc(8px);
   }
-  address, p {
+  .vcard {
+    border: 0;
     width: emCalc(259px);
     margin-left: auto;
     margin-right: auto;
     font-style: normal;
+
   }
 
 }
