@@ -238,9 +238,8 @@ article {
 
 // Donate Page specific
 .donate-option {
-  img {
-  }
   font-size: 14px;
+  margin-bottom: emCalc(10px);
   a.button {
     @extend .radius.button;
     padding: 8px 45px 8px 8px;
