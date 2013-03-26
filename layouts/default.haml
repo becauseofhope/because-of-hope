@@ -1,11 +1,14 @@
-!!! 5
-%html
+!!!
+/[if IE 8] <html class="no-js lt-ie9" lang="en">
+<!--[if gt IE 8]><!-->
+%html{class: 'no-js', lang: 'en'}<>
+  <!--<![endif]-->
   %head
-    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
     %title= "BOH - #{item[:title]}"
-    %link{:href => "/assets/stylesheets/normalize.css", :rel => "stylesheet"}
-    %link{:href => "/assets/stylesheets/app.css", :rel => "stylesheet"}
-    %script{:src => "/assets/javascripts/vendor/custom.modernizr.js"}
+    %link{href: '/assets/stylesheets/normalize.css', rel: 'stylesheet'}
+    %link{href: '/assets/stylesheets/app.css', rel: 'stylesheet'}
+    %script{src: '/assets/javascripts/vendor/custom.modernizr.js'}
   %body
     = render 'fbjsdk'
     = render 'header'
@@ -24,10 +27,10 @@
           %aside
             = render 'sidebar'
     = render 'footer'
-    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"}
-    %script{:src => "/assets/javascripts/foundation/foundation.js"}
+    %script{src: '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'}
+    %script{src: '/assets/javascripts/foundation/foundation.js'}
     - %w{alerts clearing cookie dropdown forms joyride magellan orbit placeholder reveal section tooltips topbar}.map do |js|
-      %script{:src => "/assets/javascripts/foundation/foundation.#{js}.js"}
+      %script{src: "/assets/javascripts/foundation/foundation.#{js}.js"}
     %script $(document).foundation();
 
 
