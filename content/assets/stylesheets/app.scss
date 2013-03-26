@@ -71,6 +71,7 @@ header {
   }
   nav.top-bar {
     @include grid-column(12);
+    margin-bottom: 0;
     @media #{$small} {
       section.top-bar-section.overhang-right {
         left: 0.9375em !important;
