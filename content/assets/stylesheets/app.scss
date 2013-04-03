@@ -95,15 +95,6 @@ header {
 }
 
 footer {
-  hr {
-    height: emCalc(6px);
-    border: {
-      top-width: emCalc(1px);
-      bottom-width: emCalc(1px);
-      left-width: emCalc(0px);
-      right-width: emCalc(0px);
-    }
-  }
   nav {
     padding-top: emCalc(10px);
     @include grid-row();
