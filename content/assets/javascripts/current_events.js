@@ -15,7 +15,15 @@
         $.each(data.feed.entry, function(i, item){
 
             // Render the event
-            $("#gcal-events").find("li").last().after( "<li>" + item.title.$t + "</li>" );
+            $("#gcal-events").find("li").last().after(
+                "<li>" +
+                    "DATE" +
+                    ", " +
+                    item.title.$t +
+                    ", " +
+                    "Location" +
+                "</li>"
+            );
 
         });
         $("#gcal-events").find("li").first().remove()
