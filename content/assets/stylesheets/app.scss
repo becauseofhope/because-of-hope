@@ -103,7 +103,10 @@ footer {
     padding-top: emCalc(10px);
     @include grid-row();
     .links {
-      @include grid-column(9);
+      @media #{$small} {
+        @include grid-column(7);
+      }
+
       ul {
         @include inline-list;
         li {
@@ -114,7 +117,12 @@ footer {
       }
     }
     .social {
-      @include grid-column(3);
+      @media #{$small} {
+        @include grid-column(5);
+        ul {
+          float: right;
+        }
+      }
       ul {
         @include inline-list;
       }
