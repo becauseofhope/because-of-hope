@@ -92,7 +92,10 @@ header {
         }
       }
     }
-  }
+    .top-bar-section li a:not(.button) {
+      height: 45px;
+    }
+    }
 }
 
 footer {
