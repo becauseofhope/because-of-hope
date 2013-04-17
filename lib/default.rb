@@ -3,6 +3,10 @@
 
 # https://github.com/jingoro/nanoc-html5boilerplate/blob/master/lib/default.rb
 
+require 'compass'
+require 'zurb-foundation'
+require 'faker'
+require 'nanoc/filters/javascript_concatenator'
 require 'nanoc/filters/image_compressor'
 
 unless defined? LOADED_DEFAULT_CONFIG

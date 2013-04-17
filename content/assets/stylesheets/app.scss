@@ -72,6 +72,9 @@ header {
   nav.top-bar {
     @include grid-column(12);
     margin-bottom: 0;
+    .top-bar-section li a:not(.button) {
+      height: 45px;
+    }
     @media #{$small} {
       section.top-bar-section.overhang-right {
         left: 0.9375em !important;
@@ -82,6 +85,7 @@ header {
         letter-spacing: 2px;
         line-height: 2.625em;
         margin-top: 54px;
+        height: 34px;
         padding-left: 0.9375em;
         padding-right: 0.9375em;
         font-weight: normal;

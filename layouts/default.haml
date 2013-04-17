@@ -8,7 +8,7 @@
     %title= "BOH - #{item[:title]}"
     %link{href: '/assets/stylesheets/normalize.css', rel: 'stylesheet'}
     %link{href: '/assets/stylesheets/app.css', rel: 'stylesheet'}
-    %script{src: '/assets/javascripts/vendor/custom.modernizr.js'}
+    %script{src: '/assets/javascripts/foundation/vendor-custom-modernizr.js'}
   %body
     = render 'fbjsdk'
     = render 'header'
@@ -28,9 +28,7 @@
             = render 'sidebar'
     = render 'footer'
     %script{src: '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'}
-    %script{src: '/assets/javascripts/foundation/foundation.js'}
-    - %w{alerts clearing cookie dropdown forms joyride magellan orbit placeholder reveal section tooltips topbar}.map do |js|
-      %script{src: "/assets/javascripts/foundation/foundation.#{js}.js"}
+    %script{src: '/assets/javascripts/foundation.js'}
     %script $(document).foundation();
 
 
