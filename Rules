@@ -64,11 +64,6 @@ compile '*' do
   end
 end
 
-# Move image assets for Foundation Orbit to images so relative_paths work.
-route '/assets/images/foundation/orbit/*' do
-  item.identifier.gsub(/images/, 'stylesheets').chop + "." + item[:extension]
-end
-
 route '/static/*' do
   # /static/foo.html/ → /foo.html
   item.identifier[7..-2]
