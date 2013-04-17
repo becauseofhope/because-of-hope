@@ -31,7 +31,7 @@ compile '*' do
   if item.binary?
     # don’t filter binary items
   else
-    if (item[:extension] == "haml")
+    if item[:extension] == 'haml'
       filter :haml
     else
       filter :erb
