@@ -212,8 +212,13 @@ article {
     text-align: center;
   }
 
-  #gcal-events ul{
-    margin-left: 20px;
+  #gcal-events {
+    a {
+      color: #d6d3d2;
+    }
+    ul{
+      margin-left: 20px;
+    }
   }
   hr {
     margin-top: emCalc(8px);
