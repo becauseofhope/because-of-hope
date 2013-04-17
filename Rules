@@ -32,11 +32,11 @@ end
 
 # Do not write partials
 route '/assets/stylesheets/_*/' do
-    nil
+  nil
 end
 
 route '/assets/stylesheets/*/' do
-    item.identifier.chop + '.css'
+  item.identifier.chop + '.css'
 end
 
 route '/assets/javascripts/*' do
@@ -83,7 +83,6 @@ route '*' do
     item.identifier + 'index.html'
   end
 end
-
 
 
 layout '*', :haml
