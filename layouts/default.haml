@@ -27,7 +27,11 @@
           %aside
             = render 'sidebar'
     = render 'footer'
-    %script{src: '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'}
+    :javascript
+      document.write('<script src=' +
+      ('__proto__' in {} ? '/assets/javascripts/foundation/vendor-zepto' : '/assets/javascripts/foundation/vendor-jquery') +
+      '.js><\/script>')
+
     %script{src: '/assets/javascripts/foundation.js'}
     %script $(document).foundation();
 
