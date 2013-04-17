@@ -11,8 +11,12 @@ gem 'builder'
 # nanoc
 gem 'nanoc'
 
+# Third party nanoc addons
+gem 'nanoc-image-compressor'
+gem 'nanoc-javascript-concatenator'
+
 # Zurb Foundation
-gem "zurb-foundation", "~> 4.0.2"
+gem 'zurb-foundation', '~> 4.1.1'
 
 # Compass
 gem 'compass'
@@ -25,7 +29,25 @@ gem 'rack-rewrite', :require => 'rack/rewrite'
 # Haml
 gem 'haml'
 
-# Deployment to cloud
+# Deployment
 gem 'fog'
 
-gem 'nanoc-image-compressor'
+# Optimization
+gem 'uglifier'
+
+# Markdown
+gem 'redcarpet'
+
+# Code hilighting
+gem 'pygments.rb'
+
+# Development
+gem 'faker'
+gem 'rake'
+gem 'guard'
+gem 'guard-nanoc', :git => 'https://github.com/nanoc/guard-nanoc.git'
+gem 'terminal-notifier-guard'
+gem 'rb-fsevent', '~> 0.9'
+
+# String operations for post creation
+gem 'stringex'
