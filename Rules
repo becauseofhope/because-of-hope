@@ -46,7 +46,9 @@ end
 # Images
 compile '/assets/images/*/' do
   if item.binary?
-    filter :image_compressor, :pngout => false
+    if ENV['NANOC_ENV'] == 'production'
+      filter :image_compressor, :pngout => false
+    end
   end
 end
 
