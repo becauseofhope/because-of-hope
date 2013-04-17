@@ -21,7 +21,7 @@
                     ", " +
                     item.title.$t +
                     ", " +
-                    "Location" +
+                    item.gd$where[0].valueString +
                 "</li>"
             );
 
