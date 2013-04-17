@@ -16,6 +16,30 @@ require 'zurb-foundation'
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
+compile '/assets/stylesheets/*/' do
+  filter :sass, Compass.sass_engine_options
+end
+
+compile '/assets/images/*/' do
+  if item.binary?
+    filter :image_compressor, :pngout => false
+  end
+end
+
+# Site Content Stuff
+compile '*' do
+  if item.binary?
+    # don’t filter binary items
+  else
+    if (item[:extension] == "haml")
+      filter :haml
+    else
+      filter :erb
+    end
+    layout 'default'
+  end
+end
+
 # CSS/Foundation
 
 # Do not write partials
@@ -51,28 +75,6 @@ route '*' do
   end
 end
 
-compile '/assets/stylesheets/*/' do
-    filter :sass, Compass.sass_engine_options
-end
 
-compile '/assets/images/*/' do
-  if item.binary?
-    filter :image_compressor, :pngout => false
-  end
-end
-
-# Site Content Stuff
-compile '*' do
-    if item.binary?
-        # don’t filter binary items
-    else
-        if (item[:extension] == "haml")
-            filter :haml
-        else
-            filter :erb
-        end
-        layout 'default'
-    end
-end
 
 layout '*', :haml
