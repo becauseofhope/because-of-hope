@@ -13,11 +13,12 @@
 
         // Parse and render each event
         $.each(data.feed.entry, function(i, item){
+            var start_time = moment(item.gd$when[0].startTime);
 
             // Render the event
             $("#gcal-events").find("li").last().after(
                 "<li>" +
-                    "DATE" +
+                    start_time.format("MMMM Do") +
                     ", " +
                     item.title.$t +
                     ", " +
