@@ -203,6 +203,10 @@ article {
     padding: emCalc(5px);
     text-align: center;
   }
+
+  #gcal-events ul{
+    list-style: none;
+  }
   hr {
     margin-top: emCalc(8px);
     margin-bottom: emCalc(8px);
