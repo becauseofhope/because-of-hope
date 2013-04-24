@@ -59,6 +59,8 @@ compile '*' do
   else
     if item[:extension] == 'haml'
       filter :haml
+    elsif item[:extension] == 'md'
+      filter :redcarpet
     else
       filter :erb
     end
