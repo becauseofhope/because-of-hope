@@ -35,7 +35,8 @@
 
     %script{src: '/assets/javascripts/foundation.js'}
     %script{src: '/assets/javascripts/moment.js'}
-    %script{src: '/assets/javascripts/current_events.js'}
+    - if @item[:sidebar] != false
+      %script{src: '/assets/javascripts/current_events.js'}
     %script $(document).foundation();
 
 
