@@ -103,6 +103,7 @@ footer {
     padding-top: emCalc(10px);
     @include grid-row();
     .links {
+      @include grid-column();
       @media #{$small} {
         @include grid-column(7);
       }
@@ -117,6 +118,7 @@ footer {
       }
     }
     .social {
+      @include grid-column();
       @media #{$small} {
         @include grid-column(5);
         ul {
