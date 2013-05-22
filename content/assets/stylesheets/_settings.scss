@@ -3,10 +3,8 @@ $backgroundColor: black;
 $txtColor: #fff;
 $white: #C0B7B2;
 
-// Required global settings and mixins for Foundation
-@import "foundation/foundation-global";
-
 // Settings file to override Foundation variables
+@import "foundation/components/global";
 
 // You can find the variables for each component at the bottom of their
 // doc page. We tried to name them to where they'd make sense just by reading them.
