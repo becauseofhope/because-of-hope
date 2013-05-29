@@ -22,8 +22,6 @@
                         start_time.format("MMMM Do") +
                         ", " +
                         item.title.$t +
-                        ", " +
-                        item.gd$where[0].valueString +
                         "</li>"
                 );
             } else {
