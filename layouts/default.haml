@@ -17,16 +17,17 @@
       - if @item[:header_img]
         %header
           %img{src:@item[:header_img]}
-      - if @item[:sidebar] == false
-        .spread
-          #content
-            = yield
-      - else
+      - if @item[:sidebar].nil? || @item[:sidebar] == true
         .info
           #content
             = yield
           %aside
             = render 'sidebar'
+      - else
+        .spread
+          #content
+            = yield
+
     = render 'footer'
     :javascript
       document.write('<script src=' +
@@ -35,7 +36,7 @@
 
     %script{src: '/assets/javascripts/foundation.js'}
     %script{src: '/assets/javascripts/moment.js'}
-    - if @item[:sidebar] != false
+    - if @item[:sidebar].nil? || @item[:sidebar] == true
       %script{src: '/assets/javascripts/current_events.js'}
     %script $(document).foundation();
 
