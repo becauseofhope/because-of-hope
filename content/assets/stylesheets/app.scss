@@ -120,6 +120,10 @@ footer {
     }
     .social {
       @include grid-column();
+      a {
+        font-size: 1.5em;
+        color: white;
+      }
       @media #{$small} {
         @include grid-column(5);
         ul {
