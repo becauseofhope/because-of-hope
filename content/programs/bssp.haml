@@ -20,7 +20,7 @@
 .row
   .small-12.columns
     %ul.small-block-grid-3
-      - @items.select{ |item| /^\/bssp\/.+/.match(item.identifier)}.each do |item|
+      - @items.select{ |item| /^\/programs\/bssp\/.+/.match(item.identifier)}.each do |item|
         %li
           %a{href: item.identifier}
             %img{alt: item[:title],src: item[:thumbnail]}
