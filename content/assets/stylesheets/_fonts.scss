@@ -48,3 +48,18 @@
     font-weight: normal;
     font-style: italic;
 }
+
+@font-face{
+  font-family: 'WebIconFonts';
+  src: url('/assets/fonts/web-icon-fonts-3.0/webiconfonts.eot');
+  src: url('/assets/fonts/web-icon-fonts-3.0/WebIconFonts.eot?') format('eot'),
+  url('/assets/fonts/web-icon-fonts-3.0/WebIconFonts.woff') format('woff'),
+  url('/assets/fonts/web-icon-fonts-3.0/WebIconFonts.ttf') format('truetype');
+}
+
+.wif-icon {
+  font-family: WebIconFonts;
+  font-size: 0.85em;
+  display: block;
+  margin-top: 4px;
+}
