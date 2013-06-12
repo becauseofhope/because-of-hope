@@ -84,3 +84,5 @@ deploy:
     kind: fog
     provider: aws
     bucket: alpha.becauseofhope.org
+
+base_url: http://www.becauseofhope.org

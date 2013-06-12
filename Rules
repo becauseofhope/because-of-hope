@@ -52,6 +52,15 @@ compile '/assets/images/*/' do
   end
 end
 
+compile '/sitemap/' do
+  filter :haml
+  # No layout
+end
+
+route '/sitemap/' do
+  '/sitemap.xml'
+end
+
 # Misc Stuff
 compile '*' do
   if item.binary?

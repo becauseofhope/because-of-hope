@@ -9,6 +9,8 @@ require 'faker'
 require 'nanoc/filters/javascript_concatenator'
 require 'nanoc/filters/image_compressor'
 
+include Nanoc::Helpers::XMLSitemap
+
 unless defined? LOADED_DEFAULT_CONFIG
   LOADED_DEFAULT_CONFIG = true
 
