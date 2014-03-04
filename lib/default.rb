@@ -3,6 +3,14 @@
 
 # https://github.com/jingoro/nanoc-html5boilerplate/blob/master/lib/default.rb
 
+require 'compass'
+require 'zurb-foundation'
+require 'faker'
+require 'nanoc/filters/javascript_concatenator'
+require 'nanoc/filters/image_compressor'
+
+include Nanoc::Helpers::XMLSitemap
+
 unless defined? LOADED_DEFAULT_CONFIG
   LOADED_DEFAULT_CONFIG = true
 

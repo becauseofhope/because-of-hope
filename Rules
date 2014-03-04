@@ -16,24 +16,65 @@ require 'zurb-foundation'
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-# CSS/Foundation
+
+# Styling and Javascript Asset Rules
+compile '/assets/stylesheets/*/' do
+  filter :sass, Compass.sass_engine_options
+end
+
+compile '/assets/javascripts/*' do
+  filter :erb
+  filter :concat_js
+  if ENV['NANOC_ENV'] == 'production'
+    filter :uglify_js
+  end
+end
 
 # Do not write partials
 route '/assets/stylesheets/_*/' do
-    nil
+  nil
 end
 
 route '/assets/stylesheets/*/' do
-    item.identifier.chop + '.css'
+  item.identifier.chop + '.css'
 end
 
-# Move image assets for Foundation Orbit to images so relative_paths work.
-route '/assets/images/foundation/orbit/*' do
-    item.identifier.gsub(/images/, 'stylesheets').chop + "." + item[:extension]
+route '/assets/javascripts/*' do
+  item.identifier.chop + '.js'
 end
 
-route '/assets/javascript/*' do
-    item.identifier.chop + '.js'
+# Images
+compile '/assets/images/*/' do
+  if item.binary?
+    if ENV['NANOC_ENV'] == 'production'
+      filter :image_compressor, :pngout => false
+    end
+  end
+end
+
+compile '/sitemap/' do
+  filter :haml
+  # No layout
+end
+
+route '/sitemap/' do
+  '/sitemap.xml'
+end
+
+# Misc Stuff
+compile '*' do
+  if item.binary?
+    # don’t filter binary items
+  else
+    if item[:extension] == 'haml'
+      filter :haml
+    elsif item[:extension] == 'md'
+      filter :redcarpet
+    else
+      filter :erb
+    end
+    layout 'default'
+  end
 end
 
 route '/static/*' do
@@ -51,22 +92,5 @@ route '*' do
   end
 end
 
-compile '/assets/stylesheets/*/' do
-    filter :sass, Compass.sass_engine_options
-end
-
-# Site Content Stuff
-compile '*' do
-    if item.binary?
-        # don’t filter binary items
-    else
-        if (item[:extension] == "haml")
-            filter :haml
-        else
-            filter :erb
-        end
-        layout 'default'
-    end
-end
 
 layout '*', :haml

@@ -2,27 +2,32 @@
   %h3 Featured Content
   %hr
   .program
-    %img{:src => "/assets/images/featured_beads_button.png"}
-    %img{:src => "/assets/images/featured_bssp_button.png"}
+    %a{href:'/programs/beads/'}
+      %img{src: '/assets/images/featured_beads_button.jpg'}
+    %a{href:'/programs/bssp/'}
+      %img{src: '/assets/images/featured_bssp_button.jpg'}
   %hr
   %h3 Like us on Facebook
   .row.fbbutton
-    .twelve.columns
+    .large-12.columns
       =render 'fbbutton'
   %hr
   %h3 Upcoming Events
-  .program
-    %img{:src => "http://placehold.it/259x150"}
+  #gcal-events
+    %a{href:'https://www.google.com/calendar/embed?src=becauseofhope.org_ng2q263m02042iq8rlffedpsto@group.calendar.google.com&ctz=America/Los_Angeles'}
+      %ul
+        %li
+          Check out our upcoming events by clicking here.
   %hr
   %h3 Contact Us
-  %address{:class => "vcard"}
-    %span{:class => "adr"}
+  %address.vcard
+    %span{class: 'adr'}
       .fn Because of Hope
       .street-address P.O. Box 30995
-      %span{:class => "locality"} Santa Barbara
+      %span.locality Santa Barbara
       %span,
-      %span{:class => "region", :title => "California"} CA
-      %span{:class => "postal-code"} 93130
+      %span.region{title: 'California'} CA
+      %span.postal-code 93130
     %br
     %br
     .email info@becauseofhope.org

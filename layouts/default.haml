@@ -1,21 +1,47 @@
-!!! 5
-%html
-  = render 'head'
+!!!
+/[if IE 8] <html class="no-js lt-ie9" lang="en">
+<!--[if gt IE 8]><!-->
+%html{class: 'no-js', lang: 'en'}<>
+  <!--<![endif]-->
+  %head
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
+    %title= "BOH - #{item[:title]}"
+    %link{href: '/assets/stylesheets/normalize.css', rel: 'stylesheet'}
+    %link{href: '/assets/stylesheets/app.css', rel: 'stylesheet'}
+    %link{href: '//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.css', rel: 'stylesheet'}
+    %script{src: '/assets/javascripts/respond.js'}
+    %script{src: '/assets/javascripts/foundation/vendor-custom-modernizr.js'}
   %body
     = render 'fbjsdk'
     = render 'header'
-    .main
+    %article
       - if @item[:header_img]
-        .row
-          .twelve.columns.banner
-            %img{src:@item[:header_img]}
-      - if @item[:sidebar] == false
-        = yield
-      - else
-        .row
-          .eight.columns
+        %header
+          %img{src:@item[:header_img]}
+      - if @item[:sidebar].nil? || @item[:sidebar] == true
+        .info
+          #content
             = yield
-          .four.columns
+          %aside
             = render 'sidebar'
+      - else
+        .spread
+          #content
+            = yield
+
     = render 'footer'
+    :javascript
+      document.write('<script src=' +
+      ('__proto__' in {} ? '/assets/javascripts/foundation/vendor-zepto' : '/assets/javascripts/foundation/vendor-jquery') +
+      '.js><\/script>')
+
+    %script{src: '/assets/javascripts/foundation.js'}
+    %script{src: '/assets/javascripts/moment.js'}
+    - if @item[:sidebar].nil? || @item[:sidebar] == true
+      %script{src: '/assets/javascripts/current_events.js'}
+    %script $(document).foundation();
+
+
+
+
 
