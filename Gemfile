@@ -47,3 +47,5 @@ gem 'rb-fsevent', '~> 0.9'
 
 # String operations for post creation
 gem 'stringex'
+
+gem 'unf'
