@@ -61,6 +61,15 @@ route '/sitemap/' do
   '/sitemap.xml'
 end
 
+compile '/robots/' do
+  filter :erb
+  # No layout
+end
+
+route '/robots/' do
+  '/robots.txt'
+end
+
 # Misc Stuff
 compile '*' do
   if item.binary?
