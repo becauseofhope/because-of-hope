@@ -19,22 +19,7 @@
 .row
   .small-12.columns
     %ul.small-block-grid-3
-      %li
-        %img{src: 'http://placehold.it/200x200'}
-      %li
-        %img{src: 'http://placehold.it/200x200'}
-      %li
-        %img{src: 'http://placehold.it/200x200'}
-      %li
-        %img{src: 'http://placehold.it/200x200'}
-      %li
-        %img{src: 'http://placehold.it/200x200'}
-      %li
-        %img{src: 'http://placehold.it/200x200'}
-      %li
-        %img{src: 'http://placehold.it/200x200'}
-      %li
-        %img{src: 'http://placehold.it/200x200'}
-      %li
-        %img{src: 'http://placehold.it/200x200'}
-
+      - @items.select{ |item| /^\/programs\/beads\/.+/.match(item.identifier)}.each do |item|
+        %li
+          %a{href: item.identifier}
+            %img{alt: item[:title],src: item[:thumbnail]}
