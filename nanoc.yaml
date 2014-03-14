@@ -85,5 +85,10 @@ deploy:
     provider: aws
     path_style: true
     bucket: alpha.becauseofhope.org
+  production:
+    kind: fog
+    provider: aws
+    path_style: true
+    bucket: www.becauseofhope.org
 
 base_url: http://www.becauseofhope.org
