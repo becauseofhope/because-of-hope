@@ -12,7 +12,7 @@ school
 in our programs.  A dollar really does go a long way, and on average a woman living in the villages we work with can only earn half of what is needed to support her family.  Any and every donation helps us in our goal of empowering these women and their children in Uganda.
 
 **Sponsor a Student**:  Help a child go to school in Uganda through BOH's Student Scholarship Program (BSSP).  You are
-able to sponsor a specific student or make a general donation to the program by clicking on       the tab.  Education is an essential step to breaking the cycle of poverty in a family, and you can be a part of making this possible in a student’s life.
+able to sponsor a specific student or make a general donation to the program by emailing <allison@becauseofhope.org>.  Education is an essential step to breaking the cycle of poverty in a family, and you can be a part of making this possible in a student's life.
 
 **Help Raise Awareness**:  Advocating for Ugandan widows and orphans begins in your own backyard.  Whether talking with family and friends or using your social media network to share about BOH, you can make a huge impactthrough raising awareness of our cause.  Invite friends to "Like" our Facebook page or purchase a Media Kit online to help equip you to share BOH with your community.  For more ideas on how to advocate in your community, email us at info@becauseofhope.org.
 
