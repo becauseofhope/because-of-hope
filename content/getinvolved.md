@@ -2,7 +2,7 @@
 
 We are always looking to add people to our team!  There are many ways you can get involved and join us in our effort to sustainably empower Ugandans.
 
-**Become an Intern**: BOH has various internships throughout the year that enable people to be a part of our operations and volunteer their time and talents to further our mission.  Click the          tab to learn what internships are currently available and how to apply.
+**Become an Intern**: BOH has various internships throughout the year that enable people to be a part of our operations and volunteer their time and talents to further our mission. Email us at <info@becauseofhope.org> to learn what internships are currently available and how to apply.
 
 **Host a Fundraiser**: As part of our Beads Project, we sell Ugandan handmade jewelry and crafts at community and
 school
