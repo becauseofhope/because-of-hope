@@ -6,7 +6,7 @@ We are always looking to add people to our team!  There are many ways you can ge
 
 **Host a Fundraiser**: As part of our Beads Project, we sell Ugandan handmade jewelry and crafts at community and
 school
- events and home parties.  This is a great way you can help raise awareness and funds for our cause.  Email us at info@becauseofhope.org if you are interested in hosting a fundraiser in your home or school.
+ events and home parties.  This is a great way you can help raise awareness and funds for our cause.  Email us at <info@becauseofhope.org> if you are interested in hosting a fundraiser in your home or school.
 
 **Become a Monthly Donor**: No matter the amount, you are able to make a significant impact in the lives of the people
 in our programs.  A dollar really does go a long way, and on average a woman living in the villages we work with can only earn half of what is needed to support her family.  Any and every donation helps us in our goal of empowering these women and their children in Uganda.
