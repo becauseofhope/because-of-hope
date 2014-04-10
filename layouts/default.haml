@@ -11,7 +11,7 @@
     %link{href: '/assets/stylesheets/app.css', rel: 'stylesheet'}
     %link{href: '//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.css', rel: 'stylesheet'}
     %script{src: '/assets/javascripts/respond.js'}
-    %script{src: '/assets/javascripts/foundation/vendor-custom-modernizr.js'}
+    %script{src: '/assets/javascripts/foundation/modernizr.js'}
   %body
     = render 'fbjsdk'
     = render 'header'
@@ -32,7 +32,7 @@
 
     = render 'footer'
 
-    %script{src: '/assets/javascripts/foundation/vendor-jquery.js'}
+    %script{src: '/assets/javascripts/foundation/jquery.js'}
     %script{src: '/assets/javascripts/foundation.js'}
     %script{src: '/assets/javascripts/moment.js'}
     - if @item[:sidebar].nil? || @item[:sidebar] == true

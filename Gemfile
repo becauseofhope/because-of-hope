@@ -18,6 +18,9 @@ gem 'nanoc-javascript-concatenator'
 # Zurb Foundation
 gem 'foundation-rails', '~> 5.2.1.0'
 
+# jQuery
+gem 'jquery-cdn'
+
 # Compass
 gem 'compass'
 gem 'sass'
