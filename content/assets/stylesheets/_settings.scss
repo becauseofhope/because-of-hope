@@ -3,10 +3,6 @@ $backgroundColor: black;
 $txtColor: #fff;
 $white: #C0B7B2;
 
-// Settings file to override Foundation variables
-@import "foundation/components/global";
-//@import "foundation/variables";
-
 // You can find the variables for each component at the bottom of their
 // doc page. We tried to name them to where they'd make sense just by reading them.
 // Go to http://foundation.zurb.com/docs/ to find what you need.
@@ -1010,5 +1006,6 @@ $topbar-dropdown-bg: $backgroundColor;
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms;
 // $topbar-breakpoint: emCalc(940px); // Change to 9999px for always mobile layout
-$topbar-media-query: $small;
+//$topbar-media-query: $small;
 
+@import "foundation/components/global";
