@@ -10,6 +10,8 @@ sass_options = {
   :syntax => :scss
 }
 
+add_import_path(Gem::Specification.find_by_name('foundation-rails').gem_dir + '/vendor/assets/stylesheets')
+
 if ENV['NANOC_ENV'] == 'production'
   output_style = :compressed
 end

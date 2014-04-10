@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'compass'
-require 'zurb-foundation'
 
 # A few helpful tips about the Rules file:
 #
