@@ -299,6 +299,29 @@ article {
   }
 }
 
+// Story shots
+.program-people {
+  position: relative;
+  p {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.6);
+    a {
+      color: white;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    visibility: hidden;
+  }
+  &:hover p {
+    visibility: visible;
+  }
+}
+
 // Graceful Orbit Loading State
 #featured img {
   display: none;
