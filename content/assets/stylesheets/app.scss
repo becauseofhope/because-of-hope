@@ -302,7 +302,7 @@ article {
 // Story shots
 .program-people {
   position: relative;
-  p {
+  p.hover {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -319,7 +319,7 @@ article {
     }
     visibility: hidden;
   }
-  &:hover p {
+  &:hover p.hover {
     visibility: visible;
   }
 }
