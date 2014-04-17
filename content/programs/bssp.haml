@@ -23,8 +23,11 @@
       - @items.select{ |item| /^\/programs\/bssp\/.+/.match(item.identifier)}.each do |item|
         %li
           .program-people
-            %img{alt: item[:title],src: item[:thumbnail]}
-            %p.hover
-              %a.text{href: item[:donate_link]}
+            .story
+              %img{alt: item[:title],src: item[:thumbnail]}
+              %p.hover
                 = item[:description]
+            .sponsor
+              %a{href: item[:donation_link]}
+                Sponsor this Student
 
