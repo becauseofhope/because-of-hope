@@ -293,9 +293,41 @@ article {
       height: 44px;
       font-size: 75px;
       position: absolute;
-      top: -9px;
+      top: -15px;
       right: 1px;
     }
+  }
+}
+
+// Story shots
+.program-people {
+  .story {
+    position: relative;
+    p.hover {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: 0;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 100%;
+      font-size: 12px;
+      a {
+        color: white;
+        display: block;
+        width: inherit;
+        height: inherit;
+      }
+      visibility: hidden;
+    }
+    &:hover p.hover {
+      visibility: visible;
+    }
+  }
+  .sponsor {
+    @extend h5;
+    text-align: center;
   }
 }
 

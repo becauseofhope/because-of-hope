@@ -21,5 +21,9 @@
     %ul.small-block-grid-3
       - @items.select{ |item| /^\/programs\/beads\/.+/.match(item.identifier)}.each do |item|
         %li
-          %a{href: item.identifier}
-            %img{alt: item[:title],src: item[:thumbnail]}
+          .program-people
+            .story
+              %img{alt: item[:title],src: item[:thumbnail]}
+              %p.hover
+                = item[:description]
+
