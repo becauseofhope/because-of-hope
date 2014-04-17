@@ -22,8 +22,8 @@
       - @items.select{ |item| /^\/programs\/beads\/.+/.match(item.identifier)}.each do |item|
         %li
           .program-people
-            %img{alt: item[:title],src: item[:thumbnail]}
-            %p.hover
-              %a.text{href: item[:donate_link]}
+            .story
+              %img{alt: item[:title],src: item[:thumbnail]}
+              %p.hover
                 = item[:description]
 
