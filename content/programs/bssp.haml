@@ -22,7 +22,9 @@
     %ul.small-block-grid-3
       - @items.select{ |item| /^\/programs\/bssp\/.+/.match(item.identifier)}.each do |item|
         %li
-          %a{href: item.identifier}
+          .program-people
             %img{alt: item[:title],src: item[:thumbnail]}
-
+            %p
+              %a.text{href: item[:donate_link]}
+                = item[:description]
 
