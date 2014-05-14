@@ -16,9 +16,10 @@
     = render 'fbjsdk'
     = render 'header'
     %article
-      - if @item[:header_img]
+      - if @item[:header_img] || @header_img
+        - @header_img ||= @item[:header_img]
         %header
-          %img{src:@item[:header_img]}
+          %img{src:@header_img}
       - if @item[:sidebar].nil? || @item[:sidebar] == true
         .info
           #content

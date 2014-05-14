@@ -71,7 +71,7 @@ end
 
 # Misc Stuff
 
-compile '/programs/*/*' do
+compile '/programs/*/*/' do
   filter :haml
   layout 'people'
 end
