@@ -70,6 +70,12 @@ route '/robots/' do
 end
 
 # Misc Stuff
+
+compile '/programs/*/*/' do
+  filter :haml
+  layout 'people'
+end
+
 compile '*' do
   if item.binary?
     # don’t filter binary items
