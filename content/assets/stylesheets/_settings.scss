@@ -1009,3 +1009,7 @@ $topbar-dropdown-bg: $backgroundColor;
 //$topbar-media-query: $small;
 
 @import "foundation/components/global";
+
+$topbar-media-query: "#{$screen} and (min-width:800px)" !default;
+
+
