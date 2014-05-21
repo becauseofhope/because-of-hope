@@ -326,8 +326,10 @@ article {
     }
   }
   .sponsor {
-    @extend h5;
+    text-transform: uppercase;
     text-align: center;
+    font-family: $header_font_family;
+    font-size: 20px;
   }
 }
 
