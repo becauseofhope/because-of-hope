@@ -1,7 +1,5 @@
-# Environment: <%= ENV['NANOC_ENV'] %>
-
+# Environment: <%= ENV['NANOC_ENV'] || 'Not Specified' %>
 <% if ENV['NANOC_ENV'] != 'production' %>
 User-agent: *
 Disallow: /
 <% end %>
-
