@@ -89,6 +89,6 @@ deploy:
     kind: fog
     provider: aws
     path_style: true
-    bucket: www.becauseofhope.org
+    bucket: becauseofhope.org
 
 base_url: http://www.becauseofhope.org
