@@ -6,6 +6,8 @@
     //   if the calendar it was based upon changes.
     //   you'll want to use a link in the form of:
     //   http://www.google.com/calendar/feeds/your-calendar@gmail.com/public/full?orderby=starttime&sortorder=ascending&max-results=3&futureevents=true&alt=json
+
+    // HTTPS URL for HTTPS
     var calendar_json_url = "https://www.google.com/calendar/feeds/becauseofhope.org_ng2q263m02042iq8rlffedpsto@group.calendar.google.com/public/full?orderby=starttime&sortorder=ascending&max-results=3&futureevents=true&alt=json";
 
     // Get list of upcoming events formatted in JSON
