@@ -83,15 +83,15 @@ header {
     margin-bottom: 0;
     .top-bar-section li a:not(.button) {
       height: 45px;
+      color: $txtColor;
+      text-transform: lowercase;
+      letter-spacing: 2px;
     }
     @media #{$small} {
       section.top-bar-section.overhang-right {
         left: 0.9375em !important;
       }
       .top-bar-section li a:not(.button) {
-        color: $txtColor;
-        text-transform: lowercase;
-        letter-spacing: 2px;
         line-height: 2.625em;
         margin-top: 54px;
         height: 34px;
