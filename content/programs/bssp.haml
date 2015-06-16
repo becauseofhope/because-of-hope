@@ -25,10 +25,5 @@
             .story.show-for-small-only
               %a{href: item.identifier}
                 %img{alt: item[:title],src: item[:thumbnail]}
-            .sponsor
-              - if not item[:sponsored]
-                %a{href: item[:donationLink]}
-                  Sponsor this Student
-              - else
-                Sponsored
-
+            .name
+              = item[:title]
