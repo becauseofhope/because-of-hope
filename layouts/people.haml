@@ -8,9 +8,10 @@
     .small-12.columns
       %p
         = @item[:description]
-  - if not @item[:donationLink].nil?
-    %a.text-center{href: 'https://becauseofhope.webconnex.com/ssp'}
-      %h2 Donate
+  .row
+    .large-12.columns.donate-option.text-center
+      %a.button{href: 'https://becauseofhope.webconnex.com/ssp'} Donate
+
 
 
 
