@@ -91,16 +91,24 @@ header {
       section.top-bar-section.overhang-right {
         left: 0.9375em !important;
       }
-      .top-bar-section li a:not(.button) {
-        line-height: 2.625em;
-        margin-top: 54px;
-        height: 34px;
-        padding-left: 0.9375em;
-        padding-right: 0.9375em;
-        font-weight: normal;
-        &:hover {
-          color: white;
-          background-color: #5A3A51;
+      .top-bar-section li {
+        & > a:after {
+          margin-top: 25px;
+        }
+        ul.dropdown a {
+          margin-top: 0;
+        }
+        a:not(.button) {
+          line-height: 2.625em;
+          margin-top: 54px;
+          height: 34px;
+          padding-left: 0.9375em;
+          padding-right: 0.9375em;
+          font-weight: normal;
+          &:hover {
+            color: white;
+            background-color: #5A3A51;
+          }
         }
       }
     }
