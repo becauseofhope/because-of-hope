@@ -5,13 +5,15 @@ rvm:
   - 2.1.7
 script:
   - NANOC_ENV=production bundle exec nanoc co
+  - ls
+  - pwd
 deploy:
   provider: s3
   access_key_id: AKIAIVSFJUMA2GHCLD3A
   secret_access_key:
     secure: a8xj5nffAZFJqsTOoffRTVnd0d9B4L64pxONq1R6X5bgkCBMMPwHEJtQmSRFXrhuIBZoLMujGAHOVOQs3tqEpsz8VR2KfcdCroIlB62h9eg30esH3FFJTOdEpcYEeu5dmXLUsZdur2uqWJb5t13WfCECTkkzOuNwjI4oByhwpcE=
   bucket: becauseofhope.org
-  local_dir: output
+  local-dir: output
   acl: public_read
   on:
     branch: master
