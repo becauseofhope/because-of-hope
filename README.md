@@ -1,6 +1,6 @@
-# Because of Hope
+# Because of Hope Website
 
-[becauseofhope.org](http://www.becauseofhope.org)
+[https://becauseofhope.org](http://www.becauseofhope.org)
 
 This is the sourcecode for Because of Hope's website. BOH is a 501(c)(3)
 organization in Santa Barbara that helps widows and orphans through sustainable
