@@ -1,165 +1,256 @@
-GIT
-  remote: https://github.com/nanoc/guard-nanoc.git
-  revision: 659cb52a35d47c49838c7d95b93a30bbbc94e049
-  specs:
-    guard-nanoc (1.0.2)
-      guard (>= 1.8.0)
-      nanoc (>= 3.6.3)
-
 GEM
   remote: https://rubygems.org/
   specs:
-    actionpack (4.1.0)
-      actionview (= 4.1.0)
-      activesupport (= 4.1.0)
-      rack (~> 1.5.2)
+    CFPropertyList (2.3.1)
+    actionpack (4.2.4)
+      actionview (= 4.2.4)
+      activesupport (= 4.2.4)
+      rack (~> 1.6)
       rack-test (~> 0.6.2)
-    actionview (4.1.0)
-      activesupport (= 4.1.0)
+      rails-dom-testing (~> 1.0, >= 1.0.5)
+      rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    actionview (4.2.4)
+      activesupport (= 4.2.4)
       builder (~> 3.1)
       erubis (~> 2.7.0)
-    activesupport (4.1.0)
-      i18n (~> 0.6, >= 0.6.9)
+      rails-dom-testing (~> 1.0, >= 1.0.5)
+      rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    activesupport (4.2.4)
+      i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
-      thread_safe (~> 0.1)
+      thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     adsf (1.2.0)
       rack (>= 1.0.0)
     builder (3.2.2)
-    celluloid (0.15.2)
-      timers (~> 1.1.0)
-    celluloid-io (0.15.0)
-      celluloid (>= 0.15.0)
-      nio4r (>= 0.5.0)
-    chunky_png (1.3.0)
+    chunky_png (1.3.4)
     coderay (1.1.0)
     colored (1.2)
-    compass (0.12.5)
+    compass (0.12.7)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.2.19)
-    cri (2.6.0)
+    cri (2.7.0)
       colored (~> 1.2)
     erubis (2.7.0)
-    excon (0.32.1)
-    execjs (2.0.2)
-    exifr (1.1.3)
-    faker (1.3.0)
+    excon (0.45.4)
+    execjs (2.6.0)
+    exifr (1.2.3.1)
+    faker (1.5.0)
       i18n (~> 0.5)
-    ffi (1.9.3)
-    fog (1.21.0)
-      fog-brightbox
-      fog-core (~> 1.21, >= 1.21.1)
+    ffi (1.9.10)
+    fission (0.5.0)
+      CFPropertyList (~> 2.2)
+    fog (1.34.0)
+      fog-atmos
+      fog-aws (>= 0.6.0)
+      fog-brightbox (~> 0.4)
+      fog-core (~> 1.32)
+      fog-dynect (~> 0.0.2)
+      fog-ecloud (~> 0.1)
+      fog-google (>= 0.0.2)
       fog-json
+      fog-local
+      fog-powerdns (>= 0.1.1)
+      fog-profitbricks
+      fog-radosgw (>= 0.0.2)
+      fog-riakcs
+      fog-sakuracloud (>= 0.0.4)
+      fog-serverlove
+      fog-softlayer
+      fog-storm_on_demand
+      fog-terremark
+      fog-vmfusion
+      fog-voxel
+      fog-xml (~> 0.1.1)
+      ipaddress (~> 0.5)
       nokogiri (~> 1.5, >= 1.5.11)
-    fog-brightbox (0.0.1)
+    fog-atmos (0.1.0)
       fog-core
+      fog-xml
+    fog-aws (0.7.6)
+      fog-core (~> 1.27)
+      fog-json (~> 1.0)
+      fog-xml (~> 0.1)
+      ipaddress (~> 0.8)
+    fog-brightbox (0.9.0)
+      fog-core (~> 1.22)
       fog-json
-    fog-core (1.21.1)
+      inflecto (~> 0.0.2)
+    fog-core (1.32.1)
       builder
-      excon (~> 0.32)
-      formatador (~> 0.2.0)
+      excon (~> 0.45)
+      formatador (~> 0.2)
       mime-types
       net-scp (~> 1.1)
       net-ssh (>= 2.1.3)
-    fog-json (1.0.0)
-      multi_json (~> 1.0)
-    formatador (0.2.4)
+    fog-dynect (0.0.2)
+      fog-core
+      fog-json
+      fog-xml
+    fog-ecloud (0.3.0)
+      fog-core
+      fog-xml
+    fog-google (0.1.1)
+      fog-core
+      fog-json
+      fog-xml
+    fog-json (1.0.2)
+      fog-core (~> 1.0)
+      multi_json (~> 1.10)
+    fog-local (0.2.1)
+      fog-core (~> 1.27)
+    fog-powerdns (0.1.1)
+      fog-core (~> 1.27)
+      fog-json (~> 1.0)
+      fog-xml (~> 0.1)
+    fog-profitbricks (0.0.5)
+      fog-core
+      fog-xml
+      nokogiri
+    fog-radosgw (0.0.4)
+      fog-core (>= 1.21.0)
+      fog-json
+      fog-xml (>= 0.0.1)
+    fog-riakcs (0.1.0)
+      fog-core
+      fog-json
+      fog-xml
+    fog-sakuracloud (1.3.3)
+      fog-core
+      fog-json
+    fog-serverlove (0.1.2)
+      fog-core
+      fog-json
+    fog-softlayer (0.4.7)
+      fog-core
+      fog-json
+    fog-storm_on_demand (0.1.1)
+      fog-core
+      fog-json
+    fog-terremark (0.1.0)
+      fog-core
+      fog-xml
+    fog-vmfusion (0.1.0)
+      fission
+      fog-core
+    fog-voxel (0.1.0)
+      fog-core
+      fog-xml
+    fog-xml (0.1.2)
+      fog-core
+      nokogiri (~> 1.5, >= 1.5.11)
+    formatador (0.2.5)
     foundation-rails (5.2.1.0)
       railties (>= 3.1.0)
       sass (>= 3.2.0)
-    fspath (2.1.0)
+    fspath (2.1.1)
     fssm (0.2.10)
-    guard (2.6.0)
+    guard (2.13.0)
       formatador (>= 0.2.4)
-      listen (~> 2.7)
+      listen (>= 2.7, <= 4.0)
       lumberjack (~> 1.0)
+      nenv (~> 0.1)
+      notiffany (~> 0.0)
       pry (>= 0.9.12)
+      shellany (~> 0.0)
       thor (>= 0.18.1)
-    haml (4.0.5)
+    guard-nanoc (1.0.3)
+      guard (~> 2.8)
+      nanoc (~> 3.6)
+    haml (4.0.7)
       tilt
-    hike (1.2.3)
-    i18n (0.6.9)
-    image_optim (0.13.1)
-      exifr (~> 1.1.3)
-      fspath (~> 2.1.0)
-      image_size (~> 1.3.0)
-      in_threads (~> 1.2.0)
-      progress (~> 3.0.0)
-    image_size (1.3.0)
-    in_threads (1.2.1)
-    jquery-cdn (2.1.0)
+    i18n (0.7.0)
+    image_optim (0.21.0)
+      exifr (~> 1.2, >= 1.2.2)
+      fspath (~> 2.1)
+      image_size (~> 1.3)
+      in_threads (~> 1.3)
+      progress (~> 3.0, >= 3.0.1)
+    image_size (1.4.1)
+    in_threads (1.3.1)
+    inflecto (0.0.2)
+    ipaddress (0.8.0)
+    jquery-cdn (2.1.4)
       sprockets (>= 2)
-    json (1.8.1)
-    listen (2.7.1)
-      celluloid (>= 0.15.2)
-      celluloid-io (>= 0.15.0)
+    json (1.8.3)
+    listen (3.0.3)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
-    lumberjack (1.0.5)
+    loofah (2.0.3)
+      nokogiri (>= 1.5.9)
+    lumberjack (1.0.9)
     method_source (0.8.2)
-    mime-types (2.2)
-    mini_portile (0.5.3)
-    minitest (5.3.2)
-    multi_json (1.9.2)
-    nanoc (3.6.8)
+    mime-types (2.6.2)
+    mini_portile (0.6.2)
+    minitest (5.8.1)
+    multi_json (1.11.2)
+    nanoc (3.6.11)
       cri (~> 2.3)
     nanoc-image-compressor (0.1.1)
       image_optim
       nanoc (>= 3.3.1)
     nanoc-javascript-concatenator (0.0.2)
       nanoc (>= 3.3.0)
-    net-scp (1.1.2)
+    nenv (0.2.0)
+    net-scp (1.2.1)
       net-ssh (>= 2.6.5)
-    net-ssh (2.8.0)
-    nio4r (1.1.1)
-    nokogiri (1.6.1)
-      mini_portile (~> 0.5.0)
-    posix-spawn (0.3.8)
-    progress (3.0.0)
-    pry (0.9.12.6)
-      coderay (~> 1.0)
-      method_source (~> 0.8)
+    net-ssh (3.0.1)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
+    notiffany (0.0.8)
+      nenv (~> 0.1)
+      shellany (~> 0.0)
+    posix-spawn (0.3.11)
+    progress (3.1.0)
+    pry (0.10.2)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
       slop (~> 3.4)
-    pygments.rb (0.5.4)
+    pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
-      yajl-ruby (~> 1.1.0)
-    rack (1.5.2)
-    rack-test (0.6.2)
+      yajl-ruby (~> 1.2.0)
+    rack (1.6.4)
+    rack-test (0.6.3)
       rack (>= 1.0)
-    railties (4.1.0)
-      actionpack (= 4.1.0)
-      activesupport (= 4.1.0)
+    rails-deprecated_sanitizer (1.0.3)
+      activesupport (>= 4.2.0.alpha)
+    rails-dom-testing (1.0.7)
+      activesupport (>= 4.2.0.beta, < 5.0)
+      nokogiri (~> 1.6.0)
+      rails-deprecated_sanitizer (>= 1.0.1)
+    rails-html-sanitizer (1.0.2)
+      loofah (~> 2.0)
+    railties (4.2.4)
+      actionpack (= 4.2.4)
+      activesupport (= 4.2.4)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (10.2.2)
-    rb-fsevent (0.9.4)
-    rb-inotify (0.9.3)
+    rake (10.4.2)
+    rb-fsevent (0.9.6)
+    rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    redcarpet (3.1.1)
+    redcarpet (3.3.3)
     sass (3.2.19)
-    slop (3.5.0)
-    sprockets (2.12.0)
-      hike (~> 1.2)
-      multi_json (~> 1.0)
-      rack (~> 1.0)
-      tilt (~> 1.1, != 1.3.0)
+    shellany (0.0.1)
+    slop (3.6.0)
+    sprockets (3.3.5)
+      rack (> 1, < 3)
     stringex (2.5.2)
-    terminal-notifier-guard (1.5.3)
+    terminal-notifier-guard (1.6.4)
     thor (0.19.1)
-    thread_safe (0.3.3)
-    tilt (1.4.1)
-    timers (1.1.0)
-    tzinfo (1.1.0)
+    thread_safe (0.3.5)
+    tilt (2.0.1)
+    tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (2.5.0)
+    uglifier (2.7.2)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.6)
-    yajl-ruby (1.1.0)
+    unf_ext (0.0.7.1)
+    yajl-ruby (1.2.1)
 
 PLATFORMS
   ruby
@@ -172,11 +263,11 @@ DEPENDENCIES
   fog
   foundation-rails (~> 5.2.1.0)
   guard
-  guard-nanoc!
+  guard-nanoc
   haml
   jquery-cdn
   mime-types
-  nanoc
+  nanoc (~> 3.6.8)
   nanoc-image-compressor
   nanoc-javascript-concatenator
   pygments.rb
@@ -184,7 +275,7 @@ DEPENDENCIES
   rake
   rb-fsevent (~> 0.9)
   redcarpet
-  sass
+  sass (~> 3.2.19)
   stringex
   terminal-notifier-guard
   uglifier

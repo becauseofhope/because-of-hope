@@ -9,7 +9,7 @@ gem 'rack'
 gem 'builder'
 
 # nanoc
-gem 'nanoc'
+gem 'nanoc', '~> 3.6.8'
 
 # Third party nanoc addons
 gem 'nanoc-image-compressor'
@@ -23,7 +23,7 @@ gem 'jquery-cdn'
 
 # Compass
 gem 'compass'
-gem 'sass'
+gem 'sass', '~> 3.2.19'
 
 # Haml
 gem 'haml'
@@ -41,12 +41,14 @@ gem 'redcarpet'
 gem 'pygments.rb'
 
 # Development
-gem 'faker'
-gem 'rake'
-gem 'guard'
-gem 'guard-nanoc', :git => 'https://github.com/nanoc/guard-nanoc.git'
-gem 'terminal-notifier-guard'
-gem 'rb-fsevent', '~> 0.9'
+group :development do
+  gem 'faker'
+  gem 'rake'
+  gem 'guard'
+  gem 'guard-nanoc'
+  gem 'terminal-notifier-guard'
+  gem 'rb-fsevent', '~> 0.9'
+end
 
 # String operations for post creation
 gem 'stringex'
