@@ -15,7 +15,7 @@ nanoc-powered site.
 
 ## Development
 
-This project is in a freeze technolofy wise. For a static site, this is pretty fine.
+This project is in a freeze technology-wise. For a static site, this is pretty fine.
 The stuff in the Gemfiles will only be updated if it fails to compile on newer
 OS versions. No major refactoring is on the horizon.
 
