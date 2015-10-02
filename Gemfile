@@ -13,6 +13,7 @@ gem 'nanoc', '~> 3.6.8'
 
 # Third party nanoc addons
 gem 'nanoc-image-compressor'
+gem 'image_optim_pack'
 gem 'nanoc-javascript-concatenator'
 
 # Zurb Foundation
