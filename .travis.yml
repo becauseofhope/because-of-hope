@@ -3,7 +3,7 @@ sudo: false
 rvm:
   - 2.1.7
 script:
-  - NANOC_ENV=production nanoc co
+  - NANOC_ENV=production bundle exec nanoc co
 deploy:
   provider: s3
   access_key_id: AKIAIVSFJUMA2GHCLD3A
