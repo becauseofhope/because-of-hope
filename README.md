@@ -1,15 +1,12 @@
 # Because of Hope
 
-[becauseofhope.org](http://www.becauseofhope.org) _Not yet deployed!_
-[becauseofhope.org](http://alpha.becauseofhope.org) Testing
+[becauseofhope.org](http://www.becauseofhope.org)
 
 This is the sourcecode for Because of Hope's website. BOH is a 501(c)(3)
 organization in Santa Barbara that helps widows and orphans through sustainable
 means.
 
-The website and infrastructure is still under heavy development and iteration.
-
-We're replacing:
+We were replacing:
 
 * $20/month VPS, GoDaddy registar/DNS, 2 HTML files
 
@@ -32,6 +29,15 @@ nanoc-powered site.
 * Compass
 * nanoc
 * haml
+
+## Development
+
+This project is in sort of a freeze. For a static site, this is pretty fine.
+The stuff in the Gemfiles will only be updated if it fails to compile on newer
+OS versions. No major refactoring is on the horizon.
+
+Ruby 2.1 is the last Ruby version supported. Luckily, since this is just
+a statically generated site, this is fine.
 
 ## Expected Image Specifications
 
