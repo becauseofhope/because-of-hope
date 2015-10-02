@@ -42,8 +42,8 @@ gem 'redcarpet'
 gem 'pygments.rb'
 
 # Development
+gem 'faker'
 group :development do
-  gem 'faker'
   gem 'rake'
   gem 'guard'
   gem 'guard-nanoc'
