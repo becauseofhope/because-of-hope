@@ -11,7 +11,7 @@ deploy:
   secret_access_key:
     secure: a8xj5nffAZFJqsTOoffRTVnd0d9B4L64pxONq1R6X5bgkCBMMPwHEJtQmSRFXrhuIBZoLMujGAHOVOQs3tqEpsz8VR2KfcdCroIlB62h9eg30esH3FFJTOdEpcYEeu5dmXLUsZdur2uqWJb5t13WfCECTkkzOuNwjI4oByhwpcE=
   bucket: becauseofhope.org
-  local-dir: output
+  local_dir: output
   acl: public_read
   on:
     branch: master
