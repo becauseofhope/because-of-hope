@@ -28,10 +28,12 @@ of empowering these women and their children in Uganda.
 ## Sponsor a Student
 
 Help a child go to school in Uganda through BOH's Student Scholarship Program
-(BSSP).  You are able to sponsor a specific student or make a general donation
-to the program by emailing <allison@becauseofhope.org>.  Education is an
-essential step to breaking the cycle of poverty in a family, and you can be
-a part of making this possible in a student's life.
+(BSSP). Make an impactful difference in our students' lives and join the BSSP
+Family to provide them with the financial resources and support system they
+need to attend school. To read more information and to donate, please click the
+BSSP tab in Programs or email <bssp@becauseofhope.org>. Education is an essential
+step to breaking the cycle of poverty in a family, and you can be a part of
+making this possible in a student's life.
 
 ## Help Raise Awareness
 
