@@ -32,9 +32,10 @@ with
 
 * 3¢/month Amazon S3 Static Website hosting, Cloudflare, Namecheap
 
-This new setup will allow BOH to take on multiple DDOS attacks from the
-internets and get away with paying for it all with the change we find in the
-couch or nothing since Amazon waives all bills with less than 12¢ in them.
+This new setup allowed BOH to take on multiple DDOS attacks were it to ever
+happen from the internets and get away with paying for it all with the change
+we find in the couch or nothing since Amazon waives all bills with less than 12¢
+in them.
 
 ## Tools used
 
