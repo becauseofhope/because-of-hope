@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - 2.1.3
+  - 2.1.7
 script:
   - NANOC_ENV=production nanoc co
 deploy:
