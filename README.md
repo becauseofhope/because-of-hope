@@ -22,6 +22,11 @@ OS versions. No major refactoring is on the horizon.
 Ruby 2.1 is the last Ruby version supported. Luckily, since this is just
 a statically generated site, this is fine.
 
+Pull requests must be approved by an approved submitter and a bot will merge if
+the integration tests pass.
+
+Pull requests made by users of the repository will open review apps.
+
 ## History
 
 We were replacing:
