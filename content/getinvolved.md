@@ -12,10 +12,11 @@ available and how to apply.
 
 ## Host a Fundraiser
 
-As part of our Beads Project, we sell Ugandan handmade jewelry and crafts at
-community and school events and home parties.  This is a great way you can help
-raise awareness and funds for our cause.  Email us at <info@becauseofhope.org>
-if you are interested in hosting a fundraiser in your home or school.
+As part of our Beads Project, we sell handmade Ugandan jewelry and crafts at
+community events and home jewelry parties. This is a great way you can help
+raise awareness and funds for our cause! Email Mackenzie at
+<mackenzie@becauseofhope.org> if you are interesting in hosting or want more
+information.
 
 ## Become a Monthly Donor
 
