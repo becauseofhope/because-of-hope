@@ -31,11 +31,11 @@ Pull requests made by users of the repository will open review apps.
 
 We were replacing:
 
-* $20/month VPS, GoDaddy registar/DNS, 2 HTML files
+* $20/month VPS, 2 HTML files
 
 with
 
-* 3¢/month Amazon S3 Static Website hosting, Cloudflare, Namecheap
+* 3¢/month Amazon S3 Static Website hosting, Cloudflare
 
 This new setup allowed BOH to take on multiple DDOS attacks were it to ever
 happen from the internets and get away with paying for it all with the change
