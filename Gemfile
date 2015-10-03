@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "2.1.7"
 
 # Dependencies for local Web server
 gem 'adsf'
