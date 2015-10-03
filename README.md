@@ -31,7 +31,7 @@ Pull requests made by users of the repository will open review apps.
 
 We were replacing:
 
-* $20/month VPS, GoDaddy registar/DNS, 2 HTML files
+* $20/month VPS, 2 HTML files
 
 with
 
