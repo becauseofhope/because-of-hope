@@ -12,10 +12,11 @@ available and how to apply.
 
 ## Host a Fundraiser
 
-As part of our Beads Project, we sell Ugandan handmade jewelry and crafts at
-community and school events and home parties.  This is a great way you can help
-raise awareness and funds for our cause.  Email us at <info@becauseofhope.org>
-if you are interested in hosting a fundraiser in your home or school.
+As part of our Beads Project, we sell handmade Ugandan jewelry and crafts at
+community events and home jewelry parties. This is a great way you can help
+raise awareness and funds for our cause! Email Mackenzie at
+<mackenzie@becauseofhope.org> if you are interesting in hosting or want more
+information.
 
 ## Become a Monthly Donor
 
@@ -27,13 +28,11 @@ of empowering these women and their children in Uganda.
 
 ## Sponsor a Student
 
-Help a child go to school in Uganda through BOH's Student Scholarship Program
-(BSSP). Make an impactful difference in our students' lives and join the BSSP
-Family to provide them with the financial resources and support system they
-need to attend school. To read more information and to donate, please click the
-BSSP tab in Programs or email <bssp@becauseofhope.org>. Education is an essential
-step to breaking the cycle of poverty in a family, and you can be a part of
-making this possible in a student's life.
+Help BOH's Student Scholarship Program (BSSP) students go to school in Uganda.
+Join the BSSP Family by giving the gift of education [here](/programs/bssp/) or
+emailing <bssp@becauseofhope.org>. Education is an essential step in breaking
+the cycle of poverty in a family, and you can be a part of making this possible
+in our student's lives!
 
 ## Help Raise Awareness
 
