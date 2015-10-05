@@ -38,6 +38,9 @@ and the pull request compile on Travis CI. After this, the `master` branch will
 be updated and it will automatically be deployed to S3 and be live on the main
 site.
 
+**Note**: The website is behind Cloudflare which has aggressive caching. You
+may need to force reload (look on Google) the website to see the changes.
+
 ## History
 
 We were replacing:
