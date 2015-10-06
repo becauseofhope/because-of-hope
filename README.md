@@ -28,9 +28,13 @@ Pull requests can be made and a suite of services will try to compile the site.
 * Heroku will compile and deploy the site to a review application. This is the
   blue deploy link that will show up in about two minutes. Subsequent changes
   and deployment will take about half that time.
-* Travis CI will compile and deploy the site. This ensures the site will
+* Travis CI will attempt to compile the site. This ensures the site will
   compile. This is not the same test that @homu starts as it does not contain
-  changes from the `master` branch.
+  changes from the `master` branch nor does it upload anywhere.
+* CircleCI will also attempt to compile the site. This ensures the site will
+  compile. This is not the same test that @homu starts as it does not contain
+  changes from the `master` branch nor does it upload anywhere. CircleCI 
+  results tend to come back in faster than Travis.
 
 A pull request will be merged if a reviewer tells the @homu bot that the
 changes are okay and that the post-merged test of the current `master` branch
