@@ -16,9 +16,9 @@ site.
 ## Development
 
 This project is in a freeze technology-wise. For a static site like this, this
-is pretty fine and is a perfect example of their low-maintence properties.  The
-Ruby gems specified in the `Gemfile`s will only be updated if they fails to
-compile on newer OS versions. No major refactoring is on the horizon.
+is pretty fine and is a perfect example of their low-maintenance properties. 
+The Ruby gems specified in the `Gemfile`s will only be updated if they fails 
+to compile on newer OS versions. No major refactoring is on the horizon.
 
 Ruby 2.1.7 is the last Ruby version supported. Anything newer explodes for some
 reason. That's A-OK!
