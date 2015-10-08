@@ -16,40 +16,52 @@ site.
 ## Development
 
 This project is in a freeze technology-wise. For a static site like this, this
-is pretty fine and is a perfect example of their low-maintenance properties. 
-The Ruby gems specified in the `Gemfile`s will only be updated if they fails 
-to compile on newer OS versions. No major refactoring is on the horizon.
+is pretty fine and is a perfect example of their low-maintenance properties.
+The Ruby gems specified in the `Gemfile`s will only be updated if they fails to
+compile on newer OS versions. No major refactoring is on the horizon.
 
 Ruby 2.1.7 is the last Ruby version supported. Anything newer explodes for some
-reason. That's A-OK!
+reason. That's A-OK! We don't need the latest and greatest as long as things
+can still run.
 
 Pull requests can be made and a suite of services will try to compile the site.
 
-* Heroku will compile and deploy the site to a review application. This is the
-  blue deploy link that will show up in about two minutes. Subsequent changes
-  and deployment will take about half that time.
+* Heroku will compile and deploy the site to its own review application. This
+  is the blue deploy link that will show up in about two minutes. Subsequent
+  changes and deployment will take about half that time. The site is compiled
+  in development mode so while the images are not production quality, it is
+  a fairly good representation of the site if content is changed and whatnot.
 * Travis CI will attempt to compile the site. This ensures the site will
   compile. This is not the same test that @homu starts as it does not contain
-  changes from the `master` branch nor does it upload anywhere.
+  changes from the `master` branch nor does it upload anywhere. This build is
+  done to ensure the branch *can* build on Travis which @homu will eventually
+  do if the pull request is approved.
+* Codeship will also attempt to compile the site. This ensures the site will
+  compile. This is not the same test that @homu starts as it does not contain
+  changes from the `master` branch nor does it upload anywhere. This one is
+  just done for fun.
 * CircleCI will also attempt to compile the site. This ensures the site will
   compile. This is not the same test that @homu starts as it does not contain
-  changes from the `master` branch nor does it upload anywhere. CircleCI 
-  results tend to come back in faster than Travis.
+  changes from the `master` branch nor does it upload anywhere. CircleCI
+  results tend to come back in *much* faster than Travis or Codeship as it is
+  fairly aggressive with caching the build environment.
 
 A pull request will be merged if a reviewer tells the @homu bot that the
 changes are okay and that the post-merged test of the current `master` branch
-and the pull request compile on Travis CI. After this, the `master` branch will
-be updated and it will automatically be deployed to S3 and be live on the main
-site.
+and the pull request compile on Travis CI. After approval and a successful
+compilation of the merged result, the `master` branch will be updated and it
+will automatically be deployed to S3 and be live on the main site at
+https://becauseofhope.org.
 
-**Note**: The website is behind Cloudflare which has aggressive caching. You
-may need to force reload (look on Google) the website to see the changes.
+**Note**: The main website is behind Cloudflare which has aggressive caching.
+You may need to force reload (look on Google) the website to see the changes.
+This does not apply to the pull-request generated apps on Heroku.
 
 ## History
 
 We were replacing:
 
-* $20/month VPS, 2 HTML files
+* $20/month GoDaddy VPS, 2 HTML files
 
 with
 
@@ -73,7 +85,6 @@ than 12¢ in them.
 ### Photoshop
 
 "Save for Web", High, JPG, Progressive
-
 
 ### Header Images
 
