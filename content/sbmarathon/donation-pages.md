@@ -2,7 +2,7 @@
 
 Our passionate group of runners are training hard for the purpose of raising awareness and funding for BOH.  This funding significantly impacts BOH’s ability to grow our programs to reach sustainability and empowerment in Uganda!
 
-On behalf of our runners, BOH team, the women and their families, THANK YOU!
+On behalf of our runners, the BOH team, the women and their families, THANK YOU!
 
 # Runner Donation Pages
 
