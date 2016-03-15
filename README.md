@@ -65,7 +65,7 @@ We were replacing:
 
 with
 
-* 3¢/month Amazon S3 Static Website hosting, Cloudflare
+* 2¢/month Amazon S3 Static Website hosting, Cloudflare
 
 This new setup allowed Because of Hope to take on multiple DDOS attacks were it
 to ever happen from the internets and get away with paying for it all with the
