@@ -19,7 +19,7 @@
 .row
   .small-12.columns
     %ul.small-block-grid-3
-      - @items.select{ |item| /^\/programs\/beads\/.+/.match(item.identifier)}.each do |item|
+      - @items.select{ |item| /^\/programs\/beads\/.+/.match(item.identifier)}.sort_by{|item| item[:title]}.each do |item|
         %li
           .program-people
             .story.show-for-medium-up
