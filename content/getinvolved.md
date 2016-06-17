@@ -34,7 +34,7 @@ part of our operations and volunteer their time and talents to further our
 mission. Email us at <info@becauseofhope.org> to learn what internships are 
 currently available.
 
-<a class="arrow button" href='https://docs.google.com/a/becauseofhope.org/document/d/1SIQtefP_18JPQvi9aUt5FVkX2Ned8Y_M9VqMzgsq1Sk/edit?usp=sharing'>Application</a>
+<a class="arrow button" target="_blank" href='https://docs.google.com/a/becauseofhope.org/document/d/1SIQtefP_18JPQvi9aUt5FVkX2Ned8Y_M9VqMzgsq1Sk/edit?usp=sharing'>Application</a>
 
 
 ## Help Raise Awareness
