@@ -336,6 +336,10 @@ article {
     text-align: center;
     font-family: $header_font_family;
     font-size: 20px;
+    .title {
+      line-height: 16px;
+      color: #a0c8bd;
+    }
   }
 }
 
