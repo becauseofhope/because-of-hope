@@ -5,3 +5,4 @@ Our runners are making an impact in Uganda by raising funding and awareness. Joi
 Select the runner you will help reach their $1,000 fundraising goal! Thank you for your support!
 
 * [Natalie Lemonnier](https://becauseofhope.webconnex.com/SBMNatalie)
+* [Sarah Ruiz](https://becauseofhope.webconnex.com/SBMSarah)
