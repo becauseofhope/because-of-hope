@@ -11,9 +11,9 @@ Run for BOH and fundraise by sharing with family, friends, and co-workers about 
 
 Half Marathon: 13.1 miles
 
-Half Marathon Relay: 2 share 13.1 miles
+Half Marathon Relay: 13.1 miles-2 person teams
 
-Sun Run: 5K
+Sun Run: 5 miles
 
 <a class="arrow button" href='https://becauseofhope.webconnex.com/SBM2016'>Register</a>
 
