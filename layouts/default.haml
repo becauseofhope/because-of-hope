@@ -13,6 +13,8 @@
     %link{href: '//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.css', rel: 'stylesheet'}
     %script{src: '/assets/javascripts/respond.js'}
     %script{src: '/assets/javascripts/foundation/modernizr.js'}
+    - if ENV['NANOC_ENV'] == 'production'
+      %script{src: '//knowyourmetrics.funneldash.com/fdsbutn8.js'}
   %body
     = render 'fbjsdk'
     = render 'header'
