@@ -4,6 +4,7 @@
   "repository": "https://github.com/becauseofhope/because-of-hope",
   "success_url": "/",
   "buildpacks": [
-    {"url": "https://github.com/ddollar/heroku-buildpack-multi.git"}
+    {"url": "heroku/ruby"},
+    {"url": "https://github.com/weibeld/heroku-buildpack-run.git"}
   ]
 }
