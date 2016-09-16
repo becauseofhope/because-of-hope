@@ -4,10 +4,13 @@ Our runners are making an impact in Uganda by raising funding and awareness. Joi
 ## BOH’S RUNNER PAGES
 Select the runner you will help reach their $1,000 fundraising goal! Thank you for your support!
 
+* [Chris Lowder](https://becauseofhope.webconnex.com/SBMChris)
 * [Daniel Ruiz](https://becauseofhope.webconnex.com/SBMDaniel)
 * [Dalia Caballero](https://becauseofhope.webconnex.com/SBMDalia)
 * [Kara Randall](https://becauseofhope.webconnex.com/SBMKara)
 * [Lacey Zaiser](https://becauseofhope.webconnex.com/SBMLacey)
 * [Mackenzie Lanphear](https://becauseofhope.webconnex.com/SBMKenz)
+* [Melanie Cuxil](https://becauseofhope.webconnex.com/SBMMelanie)
+* [Molly Wilcox](https://becauseofhope.webconnex.com/SBMMolly)
 * [Natalie Lemonnier](https://becauseofhope.webconnex.com/SBMNatalie)
 * [Sarah Ruiz](https://becauseofhope.webconnex.com/SBMSarah)
