@@ -7,6 +7,7 @@ Select the runner you will help reach their $1,000 fundraising goal! Thank you f
 * [Chris Lowder](https://becauseofhope.webconnex.com/SBMChris)
 * [Daniel Ruiz](https://becauseofhope.webconnex.com/SBMDaniel)
 * [Dalia Caballero](https://becauseofhope.webconnex.com/SBMDalia)
+* [Espie Carr](https://becauseofhope.webconnex.com/SBMEspie)
 * [Kara Randall](https://becauseofhope.webconnex.com/SBMKara)
 * [Lacey Zaiser](https://becauseofhope.webconnex.com/SBMLacey)
 * [Mackenzie Lanphear](https://becauseofhope.webconnex.com/SBMKenz)
