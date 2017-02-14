@@ -327,6 +327,13 @@ article {
       }
       visibility: hidden;
     }
+    p.hover.beads {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      font-size: 26px;
+    }
     &:hover p.hover {
       visibility: visible;
     }
