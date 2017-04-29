@@ -25,16 +25,9 @@
         - @header_img ||= @item[:header_img]
         %header
           %img{src:@header_img}
-      - if @item[:sidebar].nil? || @item[:sidebar] == true
-        .info
-          #content
-            = yield
-          %aside
-            = render 'sidebar'
-      - else
-        .spread
-          #content
-            = yield
+      .spread
+        #content
+          = yield
 
     = render 'footer'
 
