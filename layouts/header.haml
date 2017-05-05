@@ -11,7 +11,10 @@
     %section.top-bar-section.overhang-right
       %ul.right
         %li
-          %a{href: 'http://shop.becauseofhope.org'} Return to Store
+          - if /^\/programs\/bssp/.match(@item.identifier)
+            %a{href: 'https://because-of-hope.myshopify.com/pages/boh-student-scholarship-program'} Return to BSSP
+          - else
+            %a{href: 'https://because-of-hope.myshopify.com/collections/all'} Return to Shop
 
   .row
     .large-12.columns.header-line
