@@ -1,6 +1,6 @@
 // BOH specific
 $backgroundColor: white;
-$txtColor: black;
+$txtColor: #45818e;
 $white: #C0B7B2;
 
 // You can find the variables for each component at the bottom of their
@@ -85,7 +85,7 @@ $primary-color: #5a3a51;
 //
 
 // We use these to control header font styles
-$header-font-family: "League Gothic", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
 $header-font-weight: normal;
 // $header-font-style: normal;
 $header-font-color: $txtColor;
@@ -984,7 +984,7 @@ $topbar-height: 90px;
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: #fff;
 // $topbar-link-weight: bold;
-// $topbar-link-font-size: emCalc(13px);
+$topbar-link-font-size: 18px;
 
 // Style the top bar dropdown elements
 $topbar-dropdown-bg: $backgroundColor;

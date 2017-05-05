@@ -6,4 +6,7 @@
     .links
       %ul
         %li
-          %a{href: 'javascript:history.go(-1)'} Go Back
+          - if /^\/programs\/bssp/.match(@item.identifier)
+            %a{href: 'https://because-of-hope.myshopify.com/pages/boh-student-scholarship-program'} Return to BSSP
+          - else
+            %a{href: 'https://because-of-hope.myshopify.com/collections/all'} Return to Shop

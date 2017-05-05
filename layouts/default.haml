@@ -8,6 +8,8 @@
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1.0'}
     %meta{name: 'Description', content: 'Because of Hope is a 501c3 organization that helps Ugandan families in a sustainable manner.'}
     %title= "BOH - #{item[:title]}"
+    %link{href: '/favicon.png', rel: 'shortcut icon', type: 'image/png'}
+    %link{href: 'https://fonts.googleapis.com/css?family=Montserrat', rel: 'stylesheet'}
     %link{href: '/assets/stylesheets/normalize.css', rel: 'stylesheet'}
     %link{href: '/assets/stylesheets/app.css', rel: 'stylesheet'}
     %link{href: '//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.css', rel: 'stylesheet'}
@@ -23,22 +25,14 @@
         - @header_img ||= @item[:header_img]
         %header
           %img{src:@header_img}
-      - if @item[:sidebar].nil? || @item[:sidebar] == true
-        .info
-          #content
-            = yield
-          %aside
-            = render 'sidebar'
-      - else
-        .spread
-          #content
-            = yield
+      .spread
+        #content
+          = yield
 
     = render 'footer'
 
     %script{src: '/assets/javascripts/foundation/jquery.js'}
     %script{src: '/assets/javascripts/foundation.js'}
-    %script{src: '/assets/javascripts/foundation.reveal.js'}
     %script{src: '/assets/javascripts/moment.js'}
     - if @item[:sidebar].nil? || @item[:sidebar] == true
       %script{src: '/assets/javascripts/current_events.js'}

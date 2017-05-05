@@ -88,9 +88,6 @@ header {
       letter-spacing: 2px;
     }
     @media #{$small} {
-      section.top-bar-section.overhang-right {
-        left: 0.9375em !important;
-      }
       .top-bar-section li {
         & > a:after {
           margin-top: 25px;
@@ -103,8 +100,8 @@ header {
         }
         a:not(.button) {
           line-height: 2.625em;
-          margin-top: 54px;
-          height: 34px;
+          margin-top: 36px;
+          height: 54px;
           font-weight: normal;
           color: black;
           background-color: white;
@@ -324,7 +321,7 @@ article {
       background-color: rgba(0, 0, 0, 0.6);
       width: 100%;
       height: 100%;
-      font-size: 12px;
+      font-size: 18px;
       a {
         color: white;
         display: block;
