@@ -1,8 +1,16 @@
+# :warning: SUPERCEDED :warning:
+
+:moyai:
+
+This has been superseded by the Shopify Store and hosting at [https://becauseofhope.org](http://www.becauseofhope.org). 
+
+Some elements of the old site have been rebuilt as web components for use in the Shopify Hosting. Those can be found at the [boh_components repository](https://github.com/becauseofhope/boh_components). 
+
 # Because of Hope Website
 
 [https://becauseofhope.org](http://www.becauseofhope.org)
 
-This is the source code for Because of Hope's website. BOH is a 501(c)(3)
+This was the source code for Because of Hope's website. BOH is a 501(c)(3)
 organization in Santa Barbara, CA that helps widows and orphans through
 sustainable means.
 
